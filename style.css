@@ -62,13 +62,11 @@ nav ul li a:hover {
 /* VIDEO */
 
 .video-section {
-    height: 100vh;
+    height: 50vh;
+    /* height: 100vh; */
     display: flex;
     align-items: center;
     background-size: cover;
-    /* added later */
-    /* position: absolute; 
-    overflow: hidden; */
 }
 
 section .container {
@@ -84,7 +82,8 @@ section .container {
     top: 194px;
     left: 0;
     width: 100%;
-    height: 100vh;
+    height: 50vh;
+    /* height: 100vh; */
     overflow: hidden;
 }
 
@@ -94,7 +93,8 @@ section .container {
 }
 
 .header-overlay {
-    height: 100vh;
+    height: 50vh;
+    /* height: 100vh; */
     /* width: 100vh; not good here */
     width: 100%;
     position: absolute;
@@ -102,25 +102,31 @@ section .container {
     left: 0;
     background: #5C5C5C;
     z-index: 1;
-    opacity: 0.45; 
+    opacity: 0.55; 
 }
 
 .video-content {
     z-index: 2;
-    /* position: relative; */
-    
+    /* fixed centering content center issue */
+    position: absolute;
     width: 100%;
+    padding: 0 60px;
 }
 
 .video-content h1 {
-    /* text-align: center; */
+    text-align: center;
     color: #EDEDED;
     font-size: 60px;
     font-family: 'Amiko', sans-serif;
     font-weight: 100;
     line-height: 100px;
     margin-bottom: 0;
-    margin-top: 10% auto;
+    margin: 10% auto;
+}
+
+#word {
+  color: #f3794c;
+  text-shadow: 1px 1px 2px #170600;
 }
 
 
