@@ -50,13 +50,12 @@ nav ul li a {
 }
 
 nav ul li a.active {
-    border-bottom: 8px solid #EE4000;
+    border-bottom: 8px solid #EE7621;
 }
 
 nav ul li a:hover {
-    border-bottom: 8px solid #EE4000;
+    border-bottom: 8px solid #EE7621;
 }
-
 
 
 /* VIDEO */
@@ -67,14 +66,6 @@ nav ul li a:hover {
     display: flex;
     align-items: center;
     background-size: cover;
-}
-
-section .container {
-    max-width: 960px;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    margin: auto;
-    text-align: center;
 }
 
 .video-wrap {
@@ -90,6 +81,14 @@ section .container {
 .video-wrap video {
     min-width: 100%;
     min-height: 100%;
+}
+
+section .container {
+    max-width: 960px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: auto;
+    text-align: center;
 }
 
 .header-overlay {
@@ -129,13 +128,49 @@ section .container {
   text-shadow: 1px 1px 2px #170600;
 }
 
+/*  WHO WE ARE SECTION */
 
-/* video { */
-    /* width: 100%;
-    height: 100vh; */
-    /* fixed nav click problem in Chrome with: */
-    /* z-index: 0; */
-/* } */ 
+.about-section {
+    margin-top: 70px;
+    
+}
+
+.about-section h4 {
+    text-transform: uppercase;
+    font-size: 25px;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #EE7621;
+}
+
+.about-section h2 {
+    margin-top: 25px;
+    font-size: 35px;
+    font-family: 'Average', serif;
+    font-style: italic;
+    font-weight: 200;
+    color: #515151;
+   
+}
+
+.about-section p {
+    margin-top: 25px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 22px;
+    color: #848484;
+}
+
+.news-section {
+    height: 50vh;
+    /* height: 100vh; */
+    /* width: 100vh; not good here */
+    width: 100%;
+    position: absolute;
+    top: 194px;
+    left: 0;
+    background: #5C5C5C;
+    z-index: 1;
+    opacity: 0.55; 
+}
 
 
 
