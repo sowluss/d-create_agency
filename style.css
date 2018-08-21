@@ -243,7 +243,6 @@ grid-template-columns: 1fr 1fr;
     margin-right: 5px;
 }
  
-
 /* image side */
 .news-wrap-right {
     width: 100%;
@@ -256,5 +255,16 @@ grid-template-columns: 1fr 1fr;
     height: 576px;
     object-fit: cover;
     filter: grayscale(100%);
+}
+#news-2 {
+    margin-top: 100px;
+}
+
+.arrow-left {
+    cursor: pointer;
+}
+
+.arrow-right {
+    cursor: pointer;
 }
 
