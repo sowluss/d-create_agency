@@ -21,8 +21,8 @@ $(function () {
 // News slider
 
 let newsSlider = document.querySelectorAll('.news-container'),
-    arrowLeft = document.querySelector('.arrow-left'),
-    arrowRight = document.querySelector('.arrow-right'),
+    arrowLeft = document.querySelector('#arrow-left'),
+    arrowRight = document.querySelector('#arrow-right'),
     current = 0;
 
 // clear all slides
@@ -55,7 +55,7 @@ function slideRight() {
 //  left arrow click 
 arrowLeft.addEventListener('click', function() {
   if (current === 0) {
-    current.newsSlider.length;
+    current = newsSlider.length;
   }
   slideLeft();
 });
