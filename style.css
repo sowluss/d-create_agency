@@ -231,7 +231,7 @@ div.test img {
     background-color: transparent;
     border: 2px solid black;
     color: black;
-    font-size: 25px;
+    font-size: 20px;
     font-family: 'Source Sans Pro', sans-serif;
     text-transform: uppercase;
     padding: 15px 42px;
@@ -302,7 +302,7 @@ div.test img {
 
 .work-wrapper {
     margin-top: 80px;
-    padding-bottom: 40px;
+    padding-bottom: 50px;
     text-align: center;
     align-items: center;
     /* Cemtered verically */
@@ -361,7 +361,7 @@ div.test img {
     background-color: transparent;
     border: 2px solid black;
     color: black;
-    font-size: 25px;
+    font-size: 20px;
     font-family: 'Source Sans Pro', sans-serif;
     text-transform: uppercase;
     padding: 15px 42px;
@@ -381,7 +381,7 @@ div.test img {
 
 /* SERVICES section */
 
-.services-wrapper {
+.services-wrap {
     margin-top: 75px auto 0 auto;
     min-height: 800px;
     width: 100%;
@@ -389,19 +389,18 @@ div.test img {
 }
 
 .service-cols {
-    margin-top: 100px;
+    margin-top: 70px;
     text-align: center;
     align-items: center;
     /* Cemtered verically */
     justify-content: center;
     flex-direction: column;
-    display: flex;
     display: grid;
-    grid-template-columns: 30% 30% 30%; 
-
+    grid-template-columns: 30% 30% 30%;
+    height: 100%;
 }
 
-.services-wrapper h4 {
+.services-wrap h4 {
     text-transform: uppercase;
     font-size: 25px;
     font-family: 'Source Sans Pro', sans-serif;
@@ -413,12 +412,13 @@ div.test img {
 .fa-american-sign-language-interpreting,
 .fa-lightbulb,
 .fa-rocket {
-    color: #EE7621; 
+    color: #EE7621;
 }
 
 .service-desc img {
     width: auto;
     height: auto;
+    align-items: center;
 }
 
 .service-desc h3 {
@@ -426,6 +426,7 @@ div.test img {
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 30px;
     font-weight: 100;
+    color: #515151;
 }
 
 .service-desc p {
@@ -433,7 +434,8 @@ div.test img {
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 20px;
     text-align: justify;
-    margin: 10px 30px 10px 30px;
+    margin: 20px 40px 10px 40px;
+    color: #848484;
 }
 
 .service-desc button {
@@ -441,7 +443,7 @@ div.test img {
     background-color: transparent;
     border: 2px solid black;
     color: black;
-    font-size: 25px;
+    font-size: 20px;
     font-family: 'Source Sans Pro', sans-serif;
     text-transform: uppercase;
     padding: 15px 42px;
@@ -456,4 +458,54 @@ div.test img {
     color: white;
     background: black;
     transition: 0.5s;
+}
+
+/* Contact section */
+
+#contact-wrapper {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    min-height: 200px;
+    justify-content: center;
+    align-items: center;
+    background: #EE7621;
+}
+
+.contact h2 {
+    float: right;
+    width: 450px;
+    font-size: 35px;
+    font-family: 'Average', serif;
+    font-style: italic;
+    font-weight: 200;
+    color: white;
+}
+
+.contact button {
+    margin-left: 200px;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    font-size: 20px;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-transform: uppercase;
+    padding: 15px 42px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    transition: color 0.5s ease-in-out;
+}
+.contact button:hover {
+    color: #EE7621;
+    background: white;
+    transition: 0.5s;
+}
+
+/* Footer */
+
+.footer-wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    min-height: 200px;
 }
