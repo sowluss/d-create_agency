@@ -301,7 +301,8 @@ div.test img {
 /* OUR WORK section */
 
 .work-wrapper {
-    margin-top: 90px;
+    margin-top: 80px;
+    padding-bottom: 40px;
     text-align: center;
     align-items: center;
     /* Cemtered verically */
@@ -334,7 +335,6 @@ div.test img {
     margin-top: 70px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    height: 45vh;
 }
 
 .projects {
@@ -374,6 +374,85 @@ div.test img {
 }
 
 .projects button:hover {
+    color: white;
+    background: black;
+    transition: 0.5s;
+}
+
+/* SERVICES section */
+
+.services-wrapper {
+    margin-top: 75px auto 0 auto;
+    min-height: 800px;
+    width: 100%;
+    background: #EBEBEB;
+}
+
+.service-cols {
+    margin-top: 100px;
+    text-align: center;
+    align-items: center;
+    /* Cemtered verically */
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    display: grid;
+    grid-template-columns: 30% 30% 30%; 
+
+}
+
+.services-wrapper h4 {
+    text-transform: uppercase;
+    font-size: 25px;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #EE7621;
+    text-align: center;
+    padding-top: 70px;
+}
+
+.fa-american-sign-language-interpreting,
+.fa-lightbulb,
+.fa-rocket {
+    color: #EE7621; 
+}
+
+.service-desc img {
+    width: auto;
+    height: auto;
+}
+
+.service-desc h3 {
+    margin-top: 30px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 30px;
+    font-weight: 100;
+}
+
+.service-desc p {
+    margin-top: 20px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 20px;
+    text-align: justify;
+    margin: 10px 30px 10px 30px;
+}
+
+.service-desc button {
+    margin-top: 50px;
+    background-color: transparent;
+    border: 2px solid black;
+    color: black;
+    font-size: 25px;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-transform: uppercase;
+    padding: 15px 42px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    transition: color 0.5s ease-in-out;
+}
+
+.service-desc button:hover {
     color: white;
     background: black;
     transition: 0.5s;
