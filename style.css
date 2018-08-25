@@ -156,6 +156,8 @@ section .container {
     color: #848484;
 }
 
+/* NEWS SECTION */
+
 .news-section {
     height: 50vh;
     width: 100%;
@@ -175,8 +177,6 @@ div.test h4 {
 div.test img {
     width: 100%;
 }
-
-/* NEWS SECTIONS */
 
 .news-wrap {
     position: relative;
@@ -265,6 +265,10 @@ div.test img {
     filter: grayscale(100%);
 }
 
+.news-wrap-right .in-color {
+    filter: grayscale(0);
+}
+
 #news-2 {
     margin-top: 100px;
 }
@@ -309,6 +313,7 @@ div.test img {
     justify-content: center;
     flex-direction: column;
     display: flex;
+
 }
 
 .work-wrapper h4 {
@@ -328,7 +333,7 @@ div.test img {
 
 .work-image-container img {
     width: 100%;
-    height: auto;
+    max-height: 45vh;
 }
 
 .work-content {
@@ -554,6 +559,7 @@ div.test img {
 .footer-follow img:hover {
     transform: scale(1.1);
     transition: 0.5s;
+    cursor: pointer;
 }
 
 .quick-links {
@@ -603,3 +609,4 @@ hr {
     color: white;
     background: black;
 }
+
