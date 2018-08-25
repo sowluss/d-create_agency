@@ -62,7 +62,6 @@ nav ul li a:hover {
 
 /* NEWS PAGE STARTS HERE */
 
-
 .banner-section {
   height: 50vh;
   display: flex;
@@ -78,7 +77,6 @@ nav ul li a:hover {
   height: 50vh;
   overflow: hidden;
 }
-
 
 section .container {
   max-width: 960px;
@@ -96,7 +94,7 @@ section .container {
   left: 0;
   background: #5C5C5C;
   z-index: 1;
-  opacity: .5;
+  opacity: .4;
 }
 
 /* Banner message */
@@ -117,6 +115,8 @@ section .container {
   font-family: 'Source Sans Pro', sans-serif;
   color: white;
   margin-left: 70px;
+  text-shadow: 1px 1px 2px grey;
+
 }
 
 .banner-message h2 {
@@ -128,6 +128,7 @@ section .container {
   font-weight: 200;
   color: white;
   padding: 0 60px;
+  text-shadow: 1px 1px 2px grey;
 }
 
 .banner-message button {
@@ -185,13 +186,13 @@ section .container {
 
 .news-block-wrapper {
   margin-top: 80px;
- 
 }
 
 .news-block-row {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  width: 100%;
+  /* width: 100%; */
+  
 }
 
 /* News images */
@@ -199,6 +200,8 @@ section .container {
 .news-block-row img {
   /* makes image stay intact */
   width: 100%;
+  height: auto;
+  
 }
 
 .news-block-row img#greyscale {
@@ -266,7 +269,61 @@ section .container {
   transition: 0.5s;
 }
 
+/* ------------- HIRING PAGE -------------------- */
 
+.img-wrap .news-img {
+  filter: grayscale(100%);
+}
+
+section.text {
+  margin-top: 120px;
+}
+
+.paragraphs h4{
+  margin-top: 40px;
+}
+
+.paragraphs p {
+  margin-top: 25px;
+  text-align: justify;
+  line-height: 30px;
+}
+
+/* Share block */
+
+.share-block {
+  text-align: center;
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+
+.share-block h4 {
+  text-transform: uppercase;
+  font-size: 25px;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #EE7621;
+}
+
+.social-icons {
+  margin-top: 25px;
+}
+
+.social-icons img {
+  margin-right: 20px;
+}
+
+.social-icons img.l-blue:hover {
+  content: url(icons/twitter-white.png);
+  transition: 1.5s;
+}
+.social-icons img.blue:hover {
+  content: url(icons/linkedin-white.png);
+  transition: 1.5s;
+}
+.social-icons img.orange:hover {
+  content: url(icons/email-white.png);
+  transition: 1.5s;
+}
 
 
 /* Footer */
@@ -370,4 +427,6 @@ hr {
   color: white;
   background: black;
 }
+
+
 
