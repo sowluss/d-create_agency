@@ -100,13 +100,11 @@ section .container {
 /* Banner message */
 
 .banner-message {
- 
   /* align-items: center;
   justify-content: center; */
   flex-direction: column;
   /* display: flex; */
   z-index: 1;
-
 }
 
 .banner-message h4 {
@@ -116,7 +114,6 @@ section .container {
   color: white;
   margin-left: 70px;
   text-shadow: 1px 1px 2px grey;
-
 }
 
 .banner-message h2 {
@@ -142,7 +139,8 @@ section .container {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  margin: 30px 70px;;
+  margin: 30px 70px;
+  ;
   cursor: pointer;
   transition: color 0.5s ease-in-out;
 }
@@ -192,7 +190,6 @@ section .container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   /* width: 100%; */
-  
 }
 
 /* News images */
@@ -201,7 +198,6 @@ section .container {
   /* makes image stay intact */
   width: 100%;
   height: auto;
-  
 }
 
 .news-block-row img#greyscale {
@@ -279,7 +275,7 @@ section.text {
   margin-top: 120px;
 }
 
-.paragraphs h4{
+.paragraphs h4 {
   margin-top: 40px;
 }
 
@@ -314,17 +310,30 @@ section.text {
 
 .social-icons img.l-blue:hover {
   content: url(icons/twitter-white.png);
-  transition: 1.5s;
-}
-.social-icons img.blue:hover {
-  content: url(icons/linkedin-white.png);
-  transition: 1.5s;
-}
-.social-icons img.orange:hover {
-  content: url(icons/email-white.png);
+  cursor: pointer;
+  /* transition now working */
   transition: 1.5s;
 }
 
+.social-icons img.blue:hover {
+  content: url(icons/linkedin-white.png);
+  cursor: pointer;
+  /* transition not working */
+  transition: 1.5s;
+}
+
+.social-icons img.orange:hover {
+  content: url(icons/email-white.png);
+  cursor: pointer;
+  /* transition not working */
+  transition: 1.5s;
+}
+
+/* HACKATHON PAGE */
+
+#seminar {
+  width: 100%;
+}
 
 /* Footer */
 
@@ -336,9 +345,11 @@ section.text {
   background: black;
   border-bottom: 1px solid white;
 }
+
 .footer-contact {
   text-align: center;
 }
+
 .footer-contact h4 {
   text-transform: uppercase;
   font-size: 25px;
@@ -359,6 +370,7 @@ section.text {
 .footer-follow {
   text-align: center;
 }
+
 .footer-follow h4 {
   text-transform: uppercase;
   font-size: 25px;
@@ -384,6 +396,7 @@ section.text {
   text-align: center;
   margin-bottom: 15px;
 }
+
 .quick-links h4 {
   text-transform: uppercase;
   font-size: 25px;
@@ -392,7 +405,6 @@ section.text {
   text-align: center;
   margin-bottom: 15px;
   margin-top: 35px;
-
 }
 
 .quick-links ul li a {
@@ -414,7 +426,7 @@ hr {
   border: 0;
   border-top: 1px solid #EE7621;
   margin: 1em 0;
-  padding: 0; 
+  padding: 0;
   width: 100%;
   background: black;
 }
@@ -427,6 +439,3 @@ hr {
   color: white;
   background: black;
 }
-
-
-
