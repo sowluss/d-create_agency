@@ -178,12 +178,17 @@ section .container {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 22px;
   color: #848484;
+  text-align: justify;
 }
 
 /* Work blocks */
 
-.work-wrapper {
+div.work-wrapper, #work-row-one {
   margin-top: 50px;
+}
+
+.work-wrapper {
+  margin-top: 80px;
   padding-bottom: 50px;
   text-align: center;
   align-items: center;
@@ -270,6 +275,15 @@ div.work-wrapper, #work-row-two {
 }
 
 
+/* COMMUNICATIONS project */
+
+h4#jm {
+  margin-top: 80px;
+}
+
+.image-wrapper img {
+  width: 100%;
+}
 
 
 
