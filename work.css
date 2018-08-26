@@ -1,0 +1,380 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+  box-sizing: border-box;
+}
+
+/* added later */
+
+body {
+  overflow-x: hidden;
+}
+
+/* NAVIGATION */
+
+header {
+  padding: 10px 100px;
+  box-sizing: border-box;
+  background: #EDEDED;
+}
+
+nav {
+  width: 100%;
+  height: 61px;
+  background: rgba(237, 237, 237, 0.8);
+  /* border-bottom: 1px solid #7A7A7A; */
+  /* scroll and sticky navbar */
+  position: sticky;
+  top: 0;
+  /* fixed nav click problem in Chrome with: */
+  z-index: 255;
+}
+
+nav ul {
+  display: flex;
+  margin: 0;
+  padding: 0 100px;
+  float: right;
+}
+
+nav ul li a {
+  display: block;
+  color: #5C5C5C;
+  margin: 3px 20px;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-family: 'Amiko', sans-serif;
+  font-weight: 900;
+  line-height: 50px;
+  padding: 0 5px;
+  transition: 0.3s;
+}
+
+nav ul li a.active {
+  border-bottom: 8px solid #EE7621;
+}
+
+nav ul li a:hover {
+  border-bottom: 8px solid #EE7621;
+}
+
+/* WORK PAGE starts here */
+
+.banner-section {
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  background-size: cover;
+}
+
+.img-wrap {
+  position: absolute;
+  top: 194px;
+  left: 0;
+  width: 100%;
+  height: 50vh;
+  overflow: hidden;
+}
+
+section .container {
+  max-width: 960px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin: auto;
+  text-align: center;
+}
+
+.header-overlay {
+  height: 50vh;
+  width: 100%;
+  position: absolute;
+  top: 194px;
+  left: 0;
+  background: #5C5C5C;
+  z-index: 1;
+  opacity: .1;
+}
+
+/* Banner message */
+
+.banner-message {
+  /* align-items: center;
+  justify-content: center; */
+  flex-direction: column;
+  /* display: flex; */
+  z-index: 1;
+}
+
+/* .banner-message h4 {
+  text-transform: uppercase;
+  font-size: 25px;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: white;
+  margin-left: 70px;
+  text-shadow: 1px 1px 2px grey;
+} */
+
+.banner-message h2 {
+  margin-top: 25px;
+  margin-left: 10px;
+  font-size: 35px;
+  font-family: 'Average', serif;
+  font-style: italic;
+  font-weight: 200;
+  color: white;
+  padding: 0 60px;
+  text-shadow: 1px 1px 2px grey;
+}
+
+.banner-message button {
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  font-size: 20px;
+  font-family: 'Source Sans Pro', sans-serif;
+  text-transform: uppercase;
+  padding: 15px 42px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 30px 70px;
+  ;
+  cursor: pointer;
+  transition: color 0.5s ease-in-out;
+}
+
+.banner-message button:hover {
+  color: #EE7621;
+  background: white;
+  transition: 0.5s;
+}
+
+/* News page title */
+
+.work-section {
+  margin-top: 70px;
+}
+
+.work-section h4 {
+  text-transform: uppercase;
+  font-size: 25px;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #EE7621;
+}
+
+.work-section h2 {
+  margin-top: 25px;
+  font-size: 35px;
+  font-family: 'Average', serif;
+  font-style: italic;
+  font-weight: 200;
+  color: #515151;
+}
+
+.work-section p {
+  margin-top: 25px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 22px;
+  color: #848484;
+}
+
+/* Work blocks */
+
+.work-wrapper {
+  margin-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+  align-items: center;
+  /* Cemtered verically */
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+
+}
+
+.work-wrapper h4 {
+  text-transform: uppercase;
+  font-size: 25px;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #EE7621;
+  margin-top: 10px;
+}
+
+.work-image-container {
+  margin-top: 30px;
+  width: 100%;
+  background: #D3D3D3;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.work-image-container img {
+  width: 100%;
+  max-height: 45vh;
+}
+
+.work-content {
+  margin-top: 70px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.projects {
+  margin: 0 100px;
+}
+
+.projects h4 {
+  text-transform: uppercase;
+  font-size: 25px;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #EE7621;
+}
+
+.projects h2 {
+  margin-top: 25px;
+  font-size: 35px;
+  font-family: 'Average', serif;
+  font-style: italic;
+  font-weight: 200;
+  color: #515151;
+}
+
+.projects button {
+  background-color: transparent;
+  border: 2px solid black;
+  color: black;
+  font-size: 20px;
+  font-family: 'Source Sans Pro', sans-serif;
+  text-transform: uppercase;
+  padding: 15px 42px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 30px 2px;
+  cursor: pointer;
+  transition: color 0.5s ease-in-out;
+}
+
+.projects button:hover {
+  color: white;
+  background: black;
+  transition: 0.5s;
+}
+
+/* Second work block */
+
+div.work-wrapper, #work-row-two {
+  margin-top: 0;
+}
+
+
+
+
+
+
+/* Footer */
+
+.footer-wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  min-height: 350px;
+  align-items: center;
+  background: black;
+  border-bottom: 1px solid white;
+}
+
+.footer-contact {
+  text-align: center;
+}
+
+.footer-contact h4 {
+  text-transform: uppercase;
+  font-size: 25px;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: white;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.footer-contact p {
+  margin-top: 15px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 100;
+  font-size: 20px;
+  color: white;
+}
+
+.footer-follow {
+  text-align: center;
+}
+
+.footer-follow h4 {
+  text-transform: uppercase;
+  font-size: 25px;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: white;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.footer-follow img {
+  margin-top: 15px;
+  padding-right: 20px;
+  background: none;
+}
+
+.footer-follow img:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.quick-links {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.quick-links h4 {
+  text-transform: uppercase;
+  font-size: 25px;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: white;
+  text-align: center;
+  margin-bottom: 15px;
+  margin-top: 35px;
+}
+
+.quick-links ul li a {
+  font-size: 20px;
+  text-decoration: none;
+  font-family: 'Lato', sans-serif;
+  font-weight: 100;
+  color: white;
+}
+
+.quick-links ul li a:hover {
+  font-weight: 400;
+  color: #848484;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #EE7621;
+  margin: 1em 0;
+  padding: 0;
+  width: 100%;
+  background: black;
+}
+
+#copyright h5 {
+  padding: 15px;
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+  font-weight: 100;
+  color: white;
+  background: black;
+}
