@@ -138,7 +138,6 @@ section .container {
   padding: 15px 42px;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
   margin: 30px 70px;
   position: absolute;
   cursor: pointer;
@@ -256,11 +255,12 @@ div.work-wrapper, #work-row-one {
   padding: 15px 42px;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
-  margin: 30px 2px;
+  float: right;
+  margin: 100px auto;
   cursor: pointer;
   transition: color 0.5s ease-in-out;
 }
+
 
 .projects button:hover {
   color: white;
@@ -356,18 +356,36 @@ section.bottom-banner {
 
 .contact-partner {
   display: grid;
-  grid-template-columns: 30% 30% 40%;
-  grid-auto-columns: 300px 100px;
+  grid-template-columns: 1fr 1fr;
+  width: 80%;
+  margin: 0 auto;
 }
 
-.footer-follow h4.connect {
+.pm-social h4.connect {
   color: black;
 }
 
-.pm-details {
-  margin-top: 50px;
-  margin-right: 80px;
+.pm-name {
+  margin: 10px 100px;
 }
+
+.pm-name h3 {
+  font-family: 'Lato', sans-serif;
+  font-size: 25px;
+  font-weight: 100;
+  color: #575757;
+}
+
+.pm-social img {
+  margin-right: 15px;
+}
+
+.pm-social img:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+  cursor: pointer;
+}
+
 
 
 
