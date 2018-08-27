@@ -140,7 +140,7 @@ section .container {
   text-decoration: none;
   display: inline-block;
   margin: 30px 70px;
-  ;
+  position: absolute;
   cursor: pointer;
   transition: color 0.5s ease-in-out;
 }
@@ -284,6 +284,91 @@ h4#jm {
 .image-wrapper img {
   width: 100%;
 }
+
+.image-wrapper img#pt2 {
+  margin-top: 60px;
+}
+
+.work-image-container {
+  margin-top: 70px;
+}
+
+/* Share block */
+
+.share-block {
+  text-align: center;
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+
+.share-block h4 {
+  text-transform: uppercase;
+  font-size: 25px;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #EE7621;
+}
+
+.social-icons {
+  margin-top: 25px;
+}
+
+.social-icons img {
+  margin-right: 20px;
+}
+
+.social-icons img.l-blue:hover {
+  content: url(icons/twitter-white.png);
+  cursor: pointer;
+  /* transition now working */
+  transition: 1.5s;
+}
+
+.social-icons img.blue:hover {
+  content: url(icons/linkedin-white.png);
+  cursor: pointer;
+  /* transition not working */
+  transition: 1.5s;
+}
+
+.social-icons img.orange:hover {
+  content: url(icons/email-white.png);
+  cursor: pointer;
+  /* transition not working */
+  transition: 1.5s;
+}
+
+/* PROJECT MANAGER banner */
+
+section.bottom-banner {
+  height: 40vh;
+  background: #DBDBDB;
+  width: 100%;
+}
+
+.bottom-banner h4 {
+  padding-top: 60px;
+}
+
+.contact-partner img {
+  border-radius: 50%;
+  margin-top: 20px;
+}
+
+.contact-partner {
+  display: grid;
+  grid-template-columns: 30% 30% 40%;
+  grid-auto-columns: 300px 100px;
+}
+
+.footer-follow h4.connect {
+  color: black;
+}
+
+.pm-details {
+  margin-top: 50px;
+  margin-right: 80px;
+}
+
 
 
 
