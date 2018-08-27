@@ -78,6 +78,10 @@ nav ul li a:hover {
   overflow: hidden;
 }
 
+.img-wrap img {
+  width: 100%;
+}
+
 section .container {
   max-width: 960px;
   padding-left: 1rem;
@@ -100,10 +104,10 @@ section .container {
 /* Banner message */
 
 .banner-message {
-  /* align-items: center;
-  justify-content: center; */
-  flex-direction: column;
-  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: center; */
+  flex-direction: column; 
+  /* display: flex;   */
   z-index: 1;
 }
 
@@ -138,8 +142,9 @@ section .container {
   padding: 15px 42px;
   text-align: center;
   text-decoration: none;
+  display: inline-block;
   margin: 30px 70px;
-  position: absolute;
+  width: 100px;
   cursor: pointer;
   transition: color 0.5s ease-in-out;
 }
@@ -365,9 +370,11 @@ section.bottom-banner {
   color: black;
 }
 
-.pm-name {
-  margin: 10px 100px;
+.pm-image {
+  margin-left: 250px;
 }
+
+
 
 .pm-name h3 {
   font-family: 'Lato', sans-serif;

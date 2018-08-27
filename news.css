@@ -78,6 +78,10 @@ nav ul li a:hover {
   overflow: hidden;
 }
 
+.img-wrap img {
+  width: 100%;
+}
+
 section .container {
   max-width: 960px;
   padding-left: 1rem;
