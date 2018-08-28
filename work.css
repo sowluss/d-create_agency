@@ -222,7 +222,7 @@ div.work-wrapper, #work-row-one {
 
 .work-image-container img {
   width: 100%;
-  max-height: 45vh;
+  max-height: 100%;
 }
 
 .work-content {
@@ -363,7 +363,7 @@ section.bottom-banner {
 .contact-partner {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -375,8 +375,6 @@ section.bottom-banner {
   margin-left: 250px;
 }
 
-
-
 .pm-name h3 {
   font-family: 'Lato', sans-serif;
   font-size: 25px;
@@ -384,8 +382,13 @@ section.bottom-banner {
   color: #575757;
 }
 
+.pm-social {
+  margin-right: 250px;
+  margin-top: 20px;
+}
+
 .pm-social img {
-  margin-right: 15px;
+  margin-right: 25px;
 }
 
 .pm-social img:hover {
@@ -395,8 +398,21 @@ section.bottom-banner {
 }
 
 
+/* PAINTWORKS page */
 
+.image-wrapper img#pw {
+  margin-top: 60px;
+  height: auto;
+  width: 100%;
+}
 
+.image-wrapper #pw-mobile {
+  margin-top: 60px;
+}
+
+.image-wrapper #pw-site {
+  margin-top: 70px;
+}
 
 
 /* Footer */
