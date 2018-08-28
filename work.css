@@ -79,7 +79,8 @@ nav ul li a:hover {
 }
 
 .img-wrap img {
-  width: 100%;
+  min-width: 100%;
+  min-height: 100%;
 }
 
 section .container {
@@ -98,8 +99,9 @@ section .container {
   left: 0;
   background: #5C5C5C;
   z-index: 1;
-  opacity: .1;
+  opacity: .2;
 }
+
 
 /* Banner message */
 
@@ -144,7 +146,6 @@ section .container {
   text-decoration: none;
   display: inline-block;
   margin: 30px 70px;
-  width: 100px;
   cursor: pointer;
   transition: color 0.5s ease-in-out;
 }
@@ -260,8 +261,8 @@ div.work-wrapper, #work-row-one {
   padding: 15px 42px;
   text-align: center;
   text-decoration: none;
-  float: right;
-  margin: 100px auto;
+  display: inline-block;
+  margin: 30px 2px;
   cursor: pointer;
   transition: color 0.5s ease-in-out;
 }
