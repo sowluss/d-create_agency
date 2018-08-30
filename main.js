@@ -69,3 +69,15 @@ arrowRight.addEventListener('click', function() {
 });
 
 startSlide();
+
+
+// WHAT CAN WE DO FOR YOU SECTION
+
+$("#research").on('mouseover', function() {
+  $('#research-button').css("background-color", "black").css("transition", ".5s").css("color", "white");
+});
+
+
+// Map page
+
+$('div#flying').animate({top: "50%"});
