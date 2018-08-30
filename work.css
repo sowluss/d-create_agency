@@ -420,7 +420,6 @@ section.bottom-banner {
 
 /* Contact Page */
 
-
 .address h3 {
   text-align: center;
   padding: 20px 0 20px 0;
@@ -469,6 +468,19 @@ div.our-contacts {
   color: white;
   background: black;
   transition: 0.5s;
+}
+
+.img-wrap iframe {
+  width: 100%;
+}
+
+div#flying {
+  top: -400px;
+  left: 50%;
+  position: absolute;
+  background-image: url('img/d-create-logo.xsm.png');
+  z-index: 2;
+  overflow: hidden;
 }
 
 
