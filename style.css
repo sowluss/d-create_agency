@@ -384,6 +384,7 @@ div.test img {
     transition: 0.5s;
 }
 
+
 /* SERVICES section */
 
 .services-wrap {
@@ -424,6 +425,7 @@ div.test img {
     width: auto;
     height: auto;
     align-items: center;
+    cursor: pointer;
 }
 
 .service-desc h3 {
@@ -507,6 +509,8 @@ div.test img {
     transition: 0.5s;
     cursor: pointer;
 }
+
+
 
 /* Footer */
 
@@ -610,3 +614,10 @@ hr {
     background: black;
 }
 
+/* jQuery Class */
+
+.jhover {
+    color: white;
+    background: black;
+    transition: 0.5s;
+}

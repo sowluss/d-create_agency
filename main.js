@@ -71,13 +71,36 @@ arrowRight.addEventListener('click', function() {
 startSlide();
 
 
-// WHAT CAN WE DO FOR YOU SECTION
+// WHAT CAN WE DO FOR YOU SECTION, hover and show highlighted button
 
-$("#research").on('mouseover', function() {
+
+// 'Research & Strategy, Image
+$("#research").on('mouseenter', function() {
   $('#research-button').css("background-color", "black").css("transition", ".5s").css("color", "white");
+  $("#research").on('mouseleave', function() {
+    $('#research-button').css("background-color", "transparent").css("transition", ".5s").css("color", "black");
+  });
+});
+
+// 'Creative' Image
+$("#creative").on('mouseenter', function() {
+  $('#creative-button').css("background-color", "black").css("transition", ".5s").css("color", "white");
+  $("#creative").on('mouseleave', function() {
+    $('#creative-button').css("background-color", "transparent").css("transition", ".5s").css("color", "black");
+  });
+});
+
+// 'Delivery' Image
+$("#delivery").on('mouseenter', function() {
+  $('#delivery-button').css("background-color", "black").css("transition", ".5s").css("color", "white");
+  $("#delivery").on('mouseleave', function() {
+    $('#delivery-button').css("background-color", "transparent").css("transition", ".5s").css("color", "black");
+  });
 });
 
 
 // Map page
 
-$('div#flying').animate({top: "50%"});
+$(document).ready(function() {
+$('#flying').animate({top: "100%"});
+});
