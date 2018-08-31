@@ -281,7 +281,7 @@ div.work-wrapper, #work-row-two {
 }
 
 
-/* COMMUNICATIONS project */
+/* Communications project */
 
 h4#jm {
   margin-top: 80px;
@@ -474,15 +474,22 @@ div.our-contacts {
   width: 100%;
 }
 
-div#flying {
+
+div#flying-logo img{
   top: -400px;
-  left: 50%;
+  left: 44%;
   position: absolute;
-  background-image: url('img/d-create-logo.xsm.png');
-  z-index: 2;
-  overflow: hidden;
+  animation-name: flyinglogo;
+  animation-duration: 3s;
+  /* sorted out the element dissapearing after the last frame */
+  animation-fill-mode: forwards;
 }
 
+@keyframes flyinglogo {
+  0% {left: 44%; top: -400px;}
+  100% {left: 44%; top: 34%;}
+
+}
 
 
 
