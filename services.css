@@ -52,12 +52,26 @@ nav ul li a {
   transition: 0.3s;
 }
 
-nav ul li a.active {
-  border-bottom: 8px solid #EE7621;
+/* Bottom-border-transition - expand from middle */
+nav ul li a::after {
+  content: '';
+  display: block;
+  margin: auto;
+  height: 8px;
+  width: 0px;
+  background: transparent;
+  transition: width .5s ease, background-color .5s ease;
 }
 
-nav ul li a:hover {
-  border-bottom: 8px solid #EE7621;
+nav ul li a:hover::after {
+  width: 100%;
+  background: #e65925;
+}
+
+/* 8px line stays on the active tab  */
+nav ul li a.active::after {
+  width: 100%;
+  background: #e65925;
 }
 
 /* OUR SERVICES title */
@@ -80,7 +94,7 @@ section .container {
   min-height: 200px;
   justify-content: center;
   align-items: center;
-  background: #EE7621;
+  background: #e65925;
   margin-top: 70px;
 }
 
@@ -101,18 +115,17 @@ section .container {
   transition: color 0.5s ease-in-out;
 }
 .services button:hover {
-  color: #EE7621;
+  color: #e65925;
   background: white;
   transition: 0.5s;
   cursor: pointer;
 }
 .services .current {
-  color: #EE7621;
+  color: #e65925;
   background: white;
   transition: 0.5s;
   cursor: pointer;
 }
-
 
 /* SERVICES blocks start here */
 
@@ -124,7 +137,7 @@ section .container {
   text-transform: uppercase;
   font-size: 25px;
   font-family: 'Source Sans Pro', sans-serif;
-  color: #EE7621;
+  color: #e65925;
 }
 
 .news-section h2 {
@@ -179,7 +192,7 @@ section .container {
   text-transform: uppercase;
   font-size: 25px;
   font-family: 'Source Sans Pro', sans-serif;
-  color: #EE7621;
+  color: #e65925;
   margin-left: 80px;
 }
 
@@ -227,6 +240,10 @@ section .container {
 
 div.first-one {
   margin-top: 70px;
+}
+
+div.third-row {
+  margin-top: 90px;
 }
 
 
@@ -302,17 +319,23 @@ div.first-one {
   margin-top: 35px;
 }
 
+.quick-links ul li {
+  margin-bottom: 10px;
+}
+
 .quick-links ul li a {
   font-size: 20px;
   text-decoration: none;
   font-family: 'Lato', sans-serif;
   font-weight: 100;
   color: white;
+  transition-duration: .3s;
+  transition-timing-function: ease-in;
 }
 
 .quick-links ul li a:hover {
-  font-weight: 400;
-  color: #848484;
+  color: #E0E0E0;
+  border-bottom: 1px solid #e65925;
 }
 
 hr {

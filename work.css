@@ -52,12 +52,26 @@ nav ul li a {
   transition: 0.3s;
 }
 
-nav ul li a.active {
-  border-bottom: 8px solid #EE7621;
+/* Bottom-border-transition - expand from middle */
+nav ul li a::after {
+  content: '';
+  display: block;
+  margin: auto;
+  height: 8px;
+  width: 0px;
+  background: transparent;
+  transition: width .5s ease, background-color .5s ease;
 }
 
-nav ul li a:hover {
-  border-bottom: 8px solid #EE7621;
+nav ul li a:hover::after {
+  width: 100%;
+  background: #e65925;
+}
+
+/* 8px line stays on the active tab  */
+nav ul li a.active::after {
+  width: 100%;
+  background: #e65925;
 }
 
 /* WORK PAGE starts here */
@@ -113,15 +127,6 @@ section .container {
   z-index: 1;
 }
 
-/* .banner-message h4 {
-  text-transform: uppercase;
-  font-size: 25px;
-  font-family: 'Source Sans Pro', sans-serif;
-  color: white;
-  margin-left: 70px;
-  text-shadow: 1px 1px 2px grey;
-} */
-
 .banner-message h2 {
   margin-top: 25px;
   margin-left: 10px;
@@ -151,7 +156,7 @@ section .container {
 }
 
 .banner-message button:hover {
-  color: #EE7621;
+  color: #e65925;
   background: white;
   transition: 0.5s;
 }
@@ -166,7 +171,7 @@ section .container {
   text-transform: uppercase;
   font-size: 25px;
   font-family: 'Source Sans Pro', sans-serif;
-  color: #EE7621;
+  color: #e65925;
 }
 
 .work-section h2 {
@@ -208,7 +213,7 @@ div.work-wrapper, #work-row-one {
   text-transform: uppercase;
   font-size: 25px;
   font-family: 'Source Sans Pro', sans-serif;
-  color: #EE7621;
+  color: #e65925;
   margin-top: 10px;
 }
 
@@ -239,7 +244,7 @@ div.work-wrapper, #work-row-one {
   text-transform: uppercase;
   font-size: 25px;
   font-family: 'Source Sans Pro', sans-serif;
-  color: #EE7621;
+  color: #e65925;
 }
 
 .projects h2 {
@@ -311,7 +316,7 @@ h4#jm {
   text-transform: uppercase;
   font-size: 25px;
   font-family: 'Source Sans Pro', sans-serif;
-  color: #EE7621;
+  color: #e65925;
 }
 
 .social-icons {
@@ -320,27 +325,32 @@ h4#jm {
 
 .social-icons img {
   margin-right: 20px;
+  transition-property: all;
+  transition-duration: 1s;
 }
 
 .social-icons img.l-blue:hover {
   content: url(icons/twitter-white.png);
   cursor: pointer;
-  /* transition now working */
-  transition: 1.5s;
+  
+  transition: 1s;
+  transform: rotateY(180deg);
 }
 
 .social-icons img.blue:hover {
   content: url(icons/linkedin-white.png);
   cursor: pointer;
-  /* transition not working */
-  transition: 1.5s;
+   
+  transition: 1s;
+  transform: rotateY(180deg);
 }
 
 .social-icons img.orange:hover {
   content: url(icons/email-white.png);
   cursor: pointer;
-  /* transition not working */
-  transition: 1.5s;
+   
+  transition: 1s;
+  transform: rotateY(180deg);
 }
 
 /* PROJECT MANAGER banner */
@@ -369,6 +379,7 @@ section.bottom-banner {
 
 .pm-social h4.connect {
   color: black;
+  margin: auto;
 }
 
 .pm-image {
@@ -480,7 +491,7 @@ div#flying-logo img{
   left: 44%;
   position: absolute;
   animation-name: flyinglogo;
-  animation-duration: 3s;
+  animation-duration: 2s;
   /* sorted out the element dissapearing after the last frame */
   animation-fill-mode: forwards;
 }
@@ -565,17 +576,24 @@ div#flying-logo img{
   margin-top: 35px;
 }
 
+.quick-links ul li {
+  margin-bottom: 10px;
+}
+
 .quick-links ul li a {
   font-size: 20px;
   text-decoration: none;
   font-family: 'Lato', sans-serif;
   font-weight: 100;
   color: white;
+  transition-duration: .3s;
+  transition-timing-function: ease-in;
 }
 
 .quick-links ul li a:hover {
   font-weight: 400;
-  color: #848484;
+  color: #E0E0E0;
+  border-bottom: 1px solid #e65925;
 }
 
 hr {

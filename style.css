@@ -53,12 +53,31 @@ nav ul li a {
 }
 
 nav ul li a.active {
-    border-bottom: 8px solid #EE7621;
+    border-bottom: 8px solid #e65925;
 }
 
-nav ul li a:hover {
-    border-bottom: 8px solid #EE7621;
+/* Bottom-border-transition - expand from middle */
+nav ul li a::after {
+    content: '';
+	display: block;
+	margin: auto;
+	height: 8px;
+	width: 0px;
+	background: transparent;
+    transition: width .5s ease, background-color .5s ease;
 }
+
+nav ul li a:hover::after {
+    width: 100%;
+	background: #e65925;
+}
+
+
+
+/* nav ul li a:hover {
+    border-bottom: 8px solid #e65925;
+} */
+
 
 /* VIDEO */
 
@@ -137,7 +156,7 @@ section .container {
     text-transform: uppercase;
     font-size: 25px;
     font-family: 'Source Sans Pro', sans-serif;
-    color: #EE7621;
+    color: #e65925;
 }
 
 .about-section h2 {
@@ -207,7 +226,7 @@ div.test img {
     text-transform: uppercase;
     font-size: 25px;
     font-family: 'Source Sans Pro', sans-serif;
-    color: #EE7621;
+    color: #e65925;
 }
 
 .news-wrap-left h2 {
@@ -279,17 +298,19 @@ div.test img {
 .fa-chevron-right {
     color: white;
     padding: 17px;
-    background: #EE7621;
+    background: #e65925;
+   
 }
 
 .fa-chevron-left:hover {
-    background: #CD6600;
-    transition: 0.5s;
+    background: #5d5d5d;
+    transition: .5s;
 }
 
 .fa-chevron-right:hover {
-    background: #CD6600;
-    transition: 0.5s;
+    background: #5d5d5d;
+    transition: .5s;
+
 }
 
 .arrow {
@@ -320,7 +341,7 @@ div.test img {
     text-transform: uppercase;
     font-size: 25px;
     font-family: 'Source Sans Pro', sans-serif;
-    color: #EE7621;
+    color: #e65925;
 }
 
 .work-image-container {
@@ -350,7 +371,7 @@ div.test img {
     text-transform: uppercase;
     font-size: 25px;
     font-family: 'Source Sans Pro', sans-serif;
-    color: #EE7621;
+    color: #e65925;
 }
 
 .projects h2 {
@@ -410,7 +431,7 @@ div.test img {
     text-transform: uppercase;
     font-size: 25px;
     font-family: 'Source Sans Pro', sans-serif;
-    color: #EE7621;
+    color: #e65925;
     text-align: center;
     padding-top: 70px;
 }
@@ -418,7 +439,7 @@ div.test img {
 .fa-american-sign-language-interpreting,
 .fa-lightbulb,
 .fa-rocket {
-    color: #EE7621;
+    color: #e65925;
 }
 
 .service-desc img {
@@ -475,7 +496,7 @@ div.test img {
     min-height: 200px;
     justify-content: center;
     align-items: center;
-    background: #EE7621;
+    background: #e65925;
 }
 
 .contact h2 {
@@ -504,7 +525,7 @@ div.test img {
     transition: color 0.5s ease-in-out;
 }
 .contact button:hover {
-    color: #EE7621;
+    color: #e65925;
     background: white;
     transition: 0.5s;
     cursor: pointer;
@@ -578,7 +599,10 @@ div.test img {
     text-align: center;
     margin-bottom: 15px;
     margin-top: 35px;
+}
 
+.quick-links ul li {
+    margin-bottom: 10px;
 }
 
 .quick-links ul li a {
@@ -587,18 +611,21 @@ div.test img {
     font-family: 'Lato', sans-serif;
     font-weight: 100;
     color: white;
+    transition-duration: .3s;
+    transition-timing-function: ease-in;
 }
 
 .quick-links ul li a:hover {
     font-weight: 400;
-    color: #848484;
+    color: #E0E0E0;
+    border-bottom: 1px solid #e65925; 
 }
 
 hr {
     display: block;
     height: 1px;
     border: 0;
-    border-top: 1px solid #EE7621;
+    border-top: 1px solid #e65925;
     margin: 1em 0;
     padding: 0; 
     width: 100%;
@@ -614,10 +641,3 @@ hr {
     background: black;
 }
 
-/* jQuery Class */
-
-.jhover {
-    color: white;
-    background: black;
-    transition: 0.5s;
-}

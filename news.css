@@ -7,13 +7,11 @@
 }
 
 /* added later */
-
 body {
   overflow-x: hidden;
 }
 
 /* NAVIGATION */
-
 header {
   padding: 10px 100px;
   box-sizing: border-box;
@@ -52,16 +50,30 @@ nav ul li a {
   transition: 0.3s;
 }
 
-nav ul li a.active {
-  border-bottom: 8px solid #EE7621;
+/* Bottom-border-transition - expand from middle */
+nav ul li a::after {
+  content: '';
+  display: block;
+  margin: auto;
+  height: 8px;
+  width: 0px;
+  background: transparent;
+  transition: width .5s ease, background-color .5s ease;
 }
 
-nav ul li a:hover {
-  border-bottom: 8px solid #EE7621;
+nav ul li a:hover::after {
+  width: 100%;
+  background: #e65925;
 }
+
+/* 8px line stays on the active tab  */
+nav ul li a.active::after {
+  width: 100%;
+  background: #e65925;
+}
+
 
 /* NEWS PAGE STARTS HERE */
-
 .banner-section {
   height: 50vh;
   display: flex;
@@ -93,7 +105,7 @@ section .container {
 
 .header-overlay {
   height: 50vh;
-  width:100vw;
+  width: 100vw;
   position: absolute;
   top: 194px;
   left: 0;
@@ -103,7 +115,6 @@ section .container {
 }
 
 /* Banner message */
-
 .banner-message {
   /* align-items: center;
   justify-content: center; */
@@ -150,13 +161,12 @@ section .container {
 }
 
 .banner-message button:hover {
-  color: #EE7621;
+  color: #e65925;
   background: white;
   transition: 0.5s;
 }
 
 /* News page title */
-
 .news-section {
   margin-top: 70px;
 }
@@ -165,7 +175,7 @@ section .container {
   text-transform: uppercase;
   font-size: 25px;
   font-family: 'Source Sans Pro', sans-serif;
-  color: #EE7621;
+  color: #e65925;
 }
 
 .news-section h2 {
@@ -185,7 +195,6 @@ section .container {
 }
 
 /* News blocks */
-
 .news-block-wrapper {
   margin-top: 80px;
 }
@@ -197,7 +206,6 @@ section .container {
 }
 
 /* News images */
-
 .news-block-row img {
   /* makes image stay intact */
   width: 100%;
@@ -209,7 +217,6 @@ section .container {
 }
 
 /* News text part */
-
 .news-block {
   /* text-align: center; */
   /* align-items: center; */
@@ -224,7 +231,7 @@ section .container {
   text-transform: uppercase;
   font-size: 25px;
   font-family: 'Source Sans Pro', sans-serif;
-  color: #EE7621;
+  color: #e65925;
   margin-left: 80px;
 }
 
@@ -270,7 +277,6 @@ section .container {
 }
 
 /* ------------- HIRING PAGE -------------------- */
-
 .img-wrap .news-img {
   filter: grayscale(100%);
 }
@@ -290,7 +296,6 @@ section.text {
 }
 
 /* Share block */
-
 .share-block {
   text-align: center;
   margin-top: 70px;
@@ -301,7 +306,7 @@ section.text {
   text-transform: uppercase;
   font-size: 25px;
   font-family: 'Source Sans Pro', sans-serif;
-  color: #EE7621;
+  color: #e65925;
 }
 
 .social-icons {
@@ -310,37 +315,37 @@ section.text {
 
 .social-icons img {
   margin-right: 20px;
+  transition-property: all;
+  transition-duration: 1s;
 }
 
 .social-icons img.l-blue:hover {
   content: url(icons/twitter-white.png);
   cursor: pointer;
-  /* transition now working */
-  transition: 1.5s;
+  transition: 1s;
+  transform: rotateY(180deg);
 }
 
 .social-icons img.blue:hover {
   content: url(icons/linkedin-white.png);
   cursor: pointer;
-  /* transition not working */
-  transition: 1.5s;
+  transition: 1s;
+  transform: rotateY(180deg);
 }
 
 .social-icons img.orange:hover {
   content: url(icons/email-white.png);
   cursor: pointer;
-  /* transition not working */
-  transition: 1.5s;
+  transition: 1s;
+  transform: rotateY(180deg);
 }
 
 /* HACKATHON PAGE */
-
 #seminar {
   width: 100%;
 }
 
 /* Footer */
-
 .footer-wrap {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -411,24 +416,31 @@ section.text {
   margin-top: 35px;
 }
 
+.quick-links ul li {
+  margin-bottom: 10px;
+}
+
 .quick-links ul li a {
   font-size: 20px;
   text-decoration: none;
   font-family: 'Lato', sans-serif;
   font-weight: 100;
   color: white;
+  transition-duration: .3s;
+  transition-timing-function: ease-in;
 }
 
 .quick-links ul li a:hover {
   font-weight: 400;
-  color: #848484;
+  color: #E0E0E0;
+  border-bottom: 1px solid #e65925;
 }
 
 hr {
   display: block;
   height: 1px;
   border: 0;
-  border-top: 1px solid #EE7621;
+  border-top: 1px solid #e65925;
   margin: 1em 0;
   padding: 0;
   width: 100%;
