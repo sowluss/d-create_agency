@@ -7,13 +7,11 @@
 }
 
 /* added later */
-
 body {
     overflow-x: hidden;
 }
 
 /* NAVIGATION */
-
 header {
     padding: 10px 100px;
     box-sizing: border-box;
@@ -56,31 +54,23 @@ nav ul li a.active {
     border-bottom: 8px solid #e65925;
 }
 
-/* Bottom-border-transition - expand from middle */
+/* Navigation bottom-border-transition - expand from middle */
 nav ul li a::after {
     content: '';
-	display: block;
-	margin: auto;
-	height: 8px;
-	width: 0px;
-	background: transparent;
+    display: block;
+    margin: auto;
+    height: 8px;
+    width: 0px;
+    background: transparent;
     transition: width .5s ease, background-color .5s ease;
 }
 
 nav ul li a:hover::after {
     width: 100%;
-	background: #e65925;
+    background: #e65925;
 }
 
-
-
-/* nav ul li a:hover {
-    border-bottom: 8px solid #e65925;
-} */
-
-
 /* VIDEO */
-
 .video-section {
     height: 50vh;
     /* height: 100vh; */
@@ -147,7 +137,6 @@ section .container {
 }
 
 /*  WHO WE ARE SECTION */
-
 .about-section {
     margin-top: 70px;
 }
@@ -176,7 +165,6 @@ section .container {
 }
 
 /* NEWS SECTION */
-
 .news-section {
     height: 50vh;
     width: 100%;
@@ -212,7 +200,6 @@ div.test img {
 }
 
 /* text-side */
-
 .news-wrap-left {
     text-align: center;
     align-items: center;
@@ -269,7 +256,6 @@ div.test img {
 }
 
 /* image side */
-
 .news-wrap-right {
     width: 100%;
     height: auto;
@@ -293,13 +279,11 @@ div.test img {
 }
 
 /* News section arrows */
-
 .fa-chevron-left,
 .fa-chevron-right {
     color: white;
     padding: 17px;
     background: #e65925;
-   
 }
 
 .fa-chevron-left:hover {
@@ -310,7 +294,6 @@ div.test img {
 .fa-chevron-right:hover {
     background: #5d5d5d;
     transition: .5s;
-
 }
 
 .arrow {
@@ -324,7 +307,6 @@ div.test img {
 }
 
 /* OUR WORK section */
-
 .work-wrapper {
     margin-top: 80px;
     padding-bottom: 50px;
@@ -334,7 +316,6 @@ div.test img {
     justify-content: center;
     flex-direction: column;
     display: flex;
-
 }
 
 .work-wrapper h4 {
@@ -405,9 +386,7 @@ div.test img {
     transition: 0.5s;
 }
 
-
 /* SERVICES section */
-
 .services-wrap {
     margin-top: 75px auto 0 auto;
     min-height: 800px;
@@ -436,12 +415,6 @@ div.test img {
     padding-top: 70px;
 }
 
-.fa-american-sign-language-interpreting,
-.fa-lightbulb,
-.fa-rocket {
-    color: #e65925;
-}
-
 .service-desc img {
     width: auto;
     height: auto;
@@ -462,8 +435,9 @@ div.test img {
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 20px;
     text-align: justify;
-    margin: 20px 40px 10px 40px;
+    margin: 20px 40px 0 40px;
     color: #848484;
+    min-height: 160px;
 }
 
 .service-desc button {
@@ -489,7 +463,6 @@ div.test img {
 }
 
 /* Contact section */
-
 #contact-wrapper {
     display: grid;
     grid-template-columns: 50% 50%;
@@ -524,6 +497,7 @@ div.test img {
     cursor: pointer;
     transition: color 0.5s ease-in-out;
 }
+
 .contact button:hover {
     color: #e65925;
     background: white;
@@ -531,10 +505,12 @@ div.test img {
     cursor: pointer;
 }
 
-
+/* removes blue button border in Chrome */
+button:focus {
+    outline: 0;
+}
 
 /* Footer */
-
 .footer-wrap {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -543,9 +519,11 @@ div.test img {
     background: black;
     border-bottom: 1px solid white;
 }
+
 .footer-contact {
     text-align: center;
 }
+
 .footer-contact h4 {
     text-transform: uppercase;
     font-size: 25px;
@@ -566,6 +544,7 @@ div.test img {
 .footer-follow {
     text-align: center;
 }
+
 .footer-follow h4 {
     text-transform: uppercase;
     font-size: 25px;
@@ -591,6 +570,7 @@ div.test img {
     text-align: center;
     margin-bottom: 15px;
 }
+
 .quick-links h4 {
     text-transform: uppercase;
     font-size: 25px;
@@ -618,7 +598,7 @@ div.test img {
 .quick-links ul li a:hover {
     font-weight: 400;
     color: #E0E0E0;
-    border-bottom: 1px solid #e65925; 
+    border-bottom: 1px solid #e65925;
 }
 
 hr {
@@ -627,7 +607,7 @@ hr {
     border: 0;
     border-top: 1px solid #e65925;
     margin: 1em 0;
-    padding: 0; 
+    padding: 0;
     width: 100%;
     background: black;
 }
@@ -641,3 +621,170 @@ hr {
     background: black;
 }
 
+/* ------------- MEDIA QUERIES --------------------- */
+
+/* 1024 tablets - Landscape */
+
+@media (max-width: 1400px) {
+
+    /* Navigation */
+    nav ul li a {
+        font-size: 18px;
+    }
+
+    /* VIDEO section */
+    .video-content h1 {
+        font-size: 40px;
+    }
+
+    /* Who we are section */
+    .about-section {
+        margin-top: 70px;
+    }
+
+    .about-section h4 {
+        font-size: 20px;
+    }
+
+    .about-section h2 {
+        font-size: 25px;
+    }
+
+    .about-section p {
+        margin-top: 30px;
+        font-size: 19px;
+    }
+
+    /* News banner */
+    .news-wrap-left {
+        margin-top: 20px;
+    }
+
+    .news-wrap-left h4 {
+        font-size: 20px;
+    }
+
+    .news-wrap-left h2 {
+        font-size: 25px;
+    }
+
+    .news-wrap-left p {
+        font-size: 19px;
+        padding: 0 35px;
+    }
+
+    .news-wrap-left button {
+        font-size: 15px;
+        padding: 10px 32px;
+        margin: 30px 2px;
+    }
+
+    /* Work section */
+
+    .work-wrapper h4 {
+        font-size: 20px;
+    }
+
+    .projects {
+        margin: 0 100px;
+    }
+
+    .projects h4 {
+        font-size: 20px;
+    }
+
+    .projects h2 {
+        font-size: 25px;
+        margin: 25px 0;
+        /* fixed button stayin at the same height below h2  */
+        min-height: 90px;
+    }
+
+    .projects button {
+        font-size: 15px;
+        padding: 10px 32px;
+    }
+
+    /* WHAT CAN WE DO FOR YOU */
+    .services-wrap {
+        min-height: 750px;
+    }
+
+    .service-desc img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .service-desc h3 {
+        font-size: 25px;
+    }
+
+    .service-desc p {
+        margin-top: 30px;
+        font-size: 18px;
+        /* fixed above img and buttons staying at the same height above and below paragraphs */
+        min-height: 180px;
+    }
+
+    .service-desc button {
+        font-size: 15px;
+        padding: 10px 32px;
+    }
+
+    /* Contact section */
+    #contact-wrapper {
+        min-height: 150px;
+    }
+
+    .contact h2 {
+        font-size: 25px;
+    }
+
+    .contact button {
+        font-size: 15px;
+        padding: 10px 32px;
+    }
+
+    /* FOOTER */
+    .footer-wrap {
+        min-height: 250px;
+    }
+
+    .footer-contact h4 {
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+
+    .footer-contact p {
+        font-size: 18px;
+    }
+
+    .footer-follow h4 {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .footer-follow img {
+        width: 20%;
+        height: 20%;
+    }
+
+    .quick-links {
+        margin-bottom: 25px;
+    }
+
+    .quick-links h4 {
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+
+    ul.grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #copyright h5 {
+        padding: 20px;
+        font-size: 15px;
+    }
+}
