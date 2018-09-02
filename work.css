@@ -120,10 +120,7 @@ section .container {
 /* Banner message */
 
 .banner-message {
-  /* align-items: center; */
-  /* justify-content: center; */
   flex-direction: column; 
-  /* display: flex;   */
   z-index: 1;
 }
 
@@ -161,7 +158,7 @@ section .container {
   transition: 0.5s;
 }
 
-/* News page title */
+/* Work page title */
 
 .work-section {
   margin-top: 70px;
@@ -206,7 +203,6 @@ div.work-wrapper, #work-row-one {
   justify-content: center;
   flex-direction: column;
   display: flex;
-
 }
 
 .work-wrapper h4 {
@@ -272,7 +268,6 @@ div.work-wrapper, #work-row-one {
   transition: color 0.5s ease-in-out;
 }
 
-
 .projects button:hover {
   color: white;
   background: black;
@@ -290,6 +285,11 @@ div.work-wrapper, #work-row-two {
 
 h4#jm {
   margin-top: 80px;
+  font-size: 25px;
+}
+
+div.paragraphs p {
+  font-size: 20px;
 }
 
 .image-wrapper img {
@@ -301,14 +301,14 @@ h4#jm {
 }
 
 .work-image-container {
-  margin-top: 70px;
+  margin-top: 100px;
 }
 
 /* Share block */
 
 .share-block {
   text-align: center;
-  margin-top: 70px;
+  margin-top: 40px;
   margin-bottom: 70px;
 }
 
@@ -348,7 +348,6 @@ h4#jm {
 .social-icons img.orange:hover {
   content: url(icons/email-white.png);
   cursor: pointer;
-   
   transition: 1s;
   transform: rotateY(180deg);
 }
@@ -483,6 +482,7 @@ div.our-contacts {
 
 .img-wrap iframe {
   width: 100%;
+  position: absolute;
 }
 
 
@@ -498,8 +498,7 @@ div#flying-logo img{
 
 @keyframes flyinglogo {
   0% {left: 44%; top: -400px;}
-  100% {left: 44%; top: 34%;}
-
+  100% {left: 44%; top: 37%;}
 }
 
 
@@ -614,4 +613,188 @@ hr {
   font-weight: 100;
   color: white;
   background: black;
+}
+
+
+
+/* ------------- MEDIA QUERIES --------------------- */
+
+/* 1024 tablets - Landscape */
+
+@media (max-width: 1400px) {
+
+  /* Navigation */
+  nav ul li a {
+      font-size: 18px;
+  }
+
+  /* Work section */
+
+  .work-wrapper h4 {
+      font-size: 20px;
+  }
+
+  .projects {
+      margin: 0 100px;
+  }
+
+  .projects h4 {
+      font-size: 20px;
+  }
+
+  .projects h2 {
+      font-size: 25px;
+      margin: 25px 0;
+      /* fixed button stayin at the same height below h2  */
+      min-height: 90px;
+  }
+
+  .projects button {
+      font-size: 15px;
+      padding: 10px 32px;
+  }
+
+
+  /*** WORK PAGE ***/
+
+  /* Banner */
+.img-wrap {
+  height: auto;
+}
+
+.img-wrap img {
+  width: 100%;
+}
+
+.header-overlay {
+  height: 100%;
+}
+
+/* Banner Message */
+
+.banner-message h2 {
+  font-size: 25px;
+  padding: 0 60px;
+}
+
+.banner-message button {
+  font-size: 15px;
+  padding: 10px 32px;
+}
+
+/* Work page title */
+
+.work-section {
+  margin-top: 30px;
+}
+
+.work-section h4 {
+  font-size: 20px;
+}
+
+.work-section h2 {
+  font-size: 25px;
+}
+
+/* Work blocks */
+
+div.work-wrapper, #work-row-one {
+  margin-top: 20px;
+}
+
+div.work-wrapper, #work-row-two {
+  margin-top: -60px;
+}
+
+
+/* Communications page */
+
+h4#jm {
+  font-size: 20px;
+}
+
+div.paragraphs p {
+  font-size: 18px;
+}
+
+/* Share block */
+
+.share-block {
+  margin-top: 30px;
+}
+
+.share-block h4 {
+  font-size: 20px;
+}
+
+
+/* PROJECT MANAGER banner */
+
+section.bottom-banner {
+  height: 420px;
+}
+
+.pm-image {
+  margin-left: 100px;
+}
+
+.pm-name h3 {
+  font-size: 20px;
+}
+
+.pm-social {
+  margin-right: 100px;
+   
+}
+
+
+
+  /* FOOTER */
+  .footer-wrap {
+      min-height: 250px;
+  }
+
+  .footer-contact h4 {
+      font-size: 20px;
+      margin-bottom: 30px;
+  }
+
+  .footer-contact p {
+      font-size: 18px;
+  }
+
+  .footer-follow h4 {
+      font-size: 20px;
+      margin-bottom: 20px;
+  }
+
+  .footer-follow img {
+      width: 20%;
+      height: 20%;
+  }
+
+  .quick-links {
+      margin-bottom: 25px;
+  }
+
+  .quick-links h4 {
+      font-size: 20px;
+      margin-bottom: 30px;
+  }
+
+  ul.grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+  }
+
+  ul.grid li a {
+    font-size: 18px;
+}
+
+  #copyright h5 {
+      padding: 20px;
+      font-size: 15px;
+  }
+
+
 }
