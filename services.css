@@ -160,9 +160,7 @@ section .container {
   width: auto;
 }
 
-
 /* SERVICES blocks */
-
 
 .news-block-row {
   display: grid;
@@ -356,4 +354,115 @@ hr {
   font-weight: 100;
   color: white;
   background: black;
+}
+
+
+/* ------------- MEDIA QUERIES --------------------- */
+
+/* 1024 tablets - Landscape */
+
+@media (max-width: 1400px) {
+
+  /* Navigation 1024 tablets - Landscape */
+  nav ul li a {
+      font-size: 18px;
+  }
+
+   /* Services Title 1024 tablets - Landscape */
+
+   .news-section h4 {
+    font-size: 20px;
+   }
+
+   .news-section h2 {
+    font-size: 25px;
+   }
+
+    /* Services Tabs 1024 tablets - Landscape */
+
+  .services button {
+    font-size: 15px;
+    padding: 10px 32px;
+  }
+
+  #services-wrapper {
+    min-height: 150px;
+  }
+
+  /* Service Blocks 1024 tablets - Landscape */
+
+  .news-block h4 {
+      font-size: 20px;
+      margin: 15px 5px;
+      padding: 0 5px;
+  }
+
+  .news-block h2 {
+    font-size: 25px;
+    margin: 15px 5px;
+    padding: 0 5px;
+}
+
+.news-block p {
+  font-size: 18px;
+  margin: 15px 5px;
+  padding: 0 5px;
+ 
+}
+
+/* Blocks Buttons */
+
+.news-block button {
+  font-size: 15px;
+  padding: 10px 32px;
+  margin: 15px 5px;
+}
+
+  /* FOOTER 1024 tablets - Landscape */
+
+  .footer-wrap {
+      min-height: 250px;
+  }
+
+  .footer-contact h4 {
+      font-size: 20px;
+      margin-bottom: 30px;
+  }
+
+  .footer-contact p {
+      font-size: 18px;
+  }
+
+  .footer-follow h4 {
+      font-size: 20px;
+      margin-bottom: 20px;
+  }
+
+  .footer-follow img {
+      width: 20%;
+      height: 20%;
+  }
+
+  .quick-links {
+      margin-bottom: 25px;
+  }
+
+  .quick-links h4 {
+      font-size: 20px;
+      margin-bottom: 30px;
+  }
+
+  ul.grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+  }
+
+  ul.grid li a {
+    font-size: 18px;
+}
+
+  #copyright h5 {
+      padding: 20px;
+      font-size: 15px;
+  }
 }

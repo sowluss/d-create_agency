@@ -7,13 +7,11 @@
 }
 
 /* added later */
-
 body {
   overflow-x: hidden;
 }
 
 /* NAVIGATION */
-
 header {
   padding: 10px 100px;
   box-sizing: border-box;
@@ -75,7 +73,6 @@ nav ul li a.active::after {
 }
 
 /* WORK PAGE starts here */
-
 .banner-section {
   height: 50vh;
   display: flex;
@@ -116,11 +113,9 @@ section .container {
   opacity: .2;
 }
 
-
 /* Banner message */
-
 .banner-message {
-  flex-direction: column; 
+  flex-direction: column;
   z-index: 1;
 }
 
@@ -159,7 +154,6 @@ section .container {
 }
 
 /* Work page title */
-
 .work-section {
   margin-top: 70px;
 }
@@ -189,8 +183,8 @@ section .container {
 }
 
 /* Work blocks */
-
-div.work-wrapper, #work-row-one {
+div.work-wrapper,
+#work-row-one {
   margin-top: 50px;
 }
 
@@ -275,14 +269,12 @@ div.work-wrapper, #work-row-one {
 }
 
 /* Second work block */
-
-div.work-wrapper, #work-row-two {
+div.work-wrapper,
+#work-row-two {
   margin-top: 0;
 }
 
-
 /* Communications project */
-
 h4#jm {
   margin-top: 80px;
   font-size: 25px;
@@ -305,7 +297,6 @@ div.paragraphs p {
 }
 
 /* Share block */
-
 .share-block {
   text-align: center;
   margin-top: 40px;
@@ -332,7 +323,6 @@ div.paragraphs p {
 .social-icons img.l-blue:hover {
   content: url(icons/twitter-white.png);
   cursor: pointer;
-  
   transition: 1s;
   transform: rotateY(180deg);
 }
@@ -340,7 +330,6 @@ div.paragraphs p {
 .social-icons img.blue:hover {
   content: url(icons/linkedin-white.png);
   cursor: pointer;
-   
   transition: 1s;
   transform: rotateY(180deg);
 }
@@ -353,7 +342,6 @@ div.paragraphs p {
 }
 
 /* PROJECT MANAGER banner */
-
 section.bottom-banner {
   height: 40vh;
   background: #DBDBDB;
@@ -385,8 +373,6 @@ section.bottom-banner {
   margin-left: 250px;
 }
 
- 
-
 .pm-name h3 {
   font-family: 'Lato', sans-serif;
   font-size: 25px;
@@ -409,9 +395,7 @@ section.bottom-banner {
   cursor: pointer;
 }
 
-
 /* PAINTWORKS page */
-
 .image-wrapper img#pw {
   margin-top: 60px;
   height: auto;
@@ -427,9 +411,7 @@ section.bottom-banner {
   height: auto;
 }
 
-
 /* Contact Page */
-
 .address h3 {
   text-align: center;
   padding: 20px 0 20px 0;
@@ -485,8 +467,7 @@ div.our-contacts {
   position: absolute;
 }
 
-
-div#flying-logo img{
+div#flying-logo img {
   top: -400px;
   left: 44%;
   position: absolute;
@@ -497,11 +478,16 @@ div#flying-logo img{
 }
 
 @keyframes flyinglogo {
-  0% {left: 44%; top: -400px;}
-  100% {left: 44%; top: 37%;}
+  0% {
+    left: 44%;
+    top: -400px;
+  }
+
+  100% {
+    left: 44%;
+    top: 37%;
+  }
 }
-
-
 
 /* --------- Footer -----------*/
 
@@ -615,186 +601,198 @@ hr {
   background: black;
 }
 
-
-
 /* ------------- MEDIA QUERIES --------------------- */
-
 /* 1024 tablets - Landscape */
-
 @media (max-width: 1400px) {
 
-  /* Navigation */
+  /* Navigation 1024 tablets - Landscape */
   nav ul li a {
-      font-size: 18px;
+    font-size: 18px;
   }
 
-  /* Work section */
-
+  /* Work section 1024 tablets - Landscape */
   .work-wrapper h4 {
-      font-size: 20px;
+    font-size: 20px;
   }
 
   .projects {
-      margin: 0 100px;
+    margin: 0 100px;
   }
 
   .projects h4 {
-      font-size: 20px;
+    font-size: 20px;
   }
 
   .projects h2 {
-      font-size: 25px;
-      margin: 25px 0;
-      /* fixed button stayin at the same height below h2  */
-      min-height: 90px;
+    font-size: 25px;
+    margin: 25px 0;
+    /* fixed button stayin at the same height below h2  */
+    min-height: 90px;
   }
 
   .projects button {
-      font-size: 15px;
-      padding: 10px 32px;
+    font-size: 15px;
+    padding: 10px 32px;
   }
 
+  /*** WORK PAGE 1024 tablets - Landscape ***/
+  /* Banner 1024 tablets - Landscape */
+  .img-wrap {
+    height: auto;
+  }
 
-  /*** WORK PAGE ***/
+  .img-wrap img {
+    width: 100%;
+  }
 
-  /* Banner */
-.img-wrap {
-  height: auto;
-}
+  .header-overlay {
+    height: 100%;
+  }
 
-.img-wrap img {
-  width: 100%;
-}
+  /* Banner Message 1024 tablets - Landscape*/
+  .banner-message h2 {
+    font-size: 25px;
+    padding: 0 60px;
+  }
 
-.header-overlay {
-  height: 100%;
-}
+  .banner-message button {
+    font-size: 15px;
+    padding: 10px 32px;
+  }
 
-/* Banner Message */
+  /* Work page title 1024 tablets - Landscape */
+  .work-section {
+    margin-top: 30px;
+  }
 
-.banner-message h2 {
-  font-size: 25px;
-  padding: 0 60px;
-}
+  .work-section h4 {
+    font-size: 20px;
+  }
 
-.banner-message button {
-  font-size: 15px;
-  padding: 10px 32px;
-}
+  .work-section h2 {
+    font-size: 25px;
+  }
 
-/* Work page title */
+  /* Work blocks 1024 tablets - Landscape */
+  div.work-wrapper,
+  #work-row-one {
+    margin-top: 20px;
+  }
 
-.work-section {
-  margin-top: 30px;
-}
+  div.work-wrapper,
+  #work-row-two {
+    margin-top: -60px;
+  }
 
-.work-section h4 {
-  font-size: 20px;
-}
+  /* Communications page 1024 tablets - Landscape*/
+  h4#jm {
+    font-size: 20px;
+  }
 
-.work-section h2 {
-  font-size: 25px;
-}
+  div.paragraphs p {
+    font-size: 18px;
+  }
 
-/* Work blocks */
+  /* Share block 1024 tablets - Landscape */
+  .share-block {
+    margin-top: 30px;
+  }
 
-div.work-wrapper, #work-row-one {
-  margin-top: 20px;
-}
+  .share-block h4 {
+    font-size: 20px;
+  }
 
-div.work-wrapper, #work-row-two {
-  margin-top: -60px;
-}
+  /* PROJECT MANAGER banner 1024 tablets - Landscape*/
+  section.bottom-banner {
+    height: 420px;
+  }
 
+  .pm-image {
+    margin-top: 30px;
+    margin-left: 100px;
+  }
 
-/* Communications page */
+  .pm-image img {
+    width: 150px;
+  }
 
-h4#jm {
-  font-size: 20px;
-}
+  .pm-name h3 {
+    font-size: 20px;
+  }
 
-div.paragraphs p {
-  font-size: 18px;
-}
+  .pm-social {
+    margin-right: 100px;
+  }
 
-/* Share block */
+  /*  PAINTWORKS page 1024 tablets - Landscape */
+  .image-wrapper img#pw {
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
 
-.share-block {
-  margin-top: 30px;
-}
+  /*  Living Solutions page 1024 tablets - Landscape */
+  div#living {
+    margin-top: 60px;
+  }
 
-.share-block h4 {
-  font-size: 20px;
-}
+  /*  Digital Experience page 1024 tablets - Landscape */
+  p#digital {
+    margin-top: 80px;
+  }
 
+  div#digital {
+    margin-top: 60px;
+  }
 
-/* PROJECT MANAGER banner */
+  /*  KT Sports page 1024 tablets - Landscape */
+  div#kt {
+    margin-top: 60px;
+  }
 
-section.bottom-banner {
-  height: 420px;
-}
-
-.pm-image {
-  margin-left: 100px;
-}
-
-.pm-name h3 {
-  font-size: 20px;
-}
-
-.pm-social {
-  margin-right: 100px;
-   
-}
-
-
-
-  /* FOOTER */
+  /* FOOTER 1024 tablets - Landscape */
   .footer-wrap {
-      min-height: 250px;
+    min-height: 250px;
   }
 
   .footer-contact h4 {
-      font-size: 20px;
-      margin-bottom: 30px;
+    font-size: 20px;
+    margin-bottom: 30px;
   }
 
   .footer-contact p {
-      font-size: 18px;
+    font-size: 18px;
   }
 
   .footer-follow h4 {
-      font-size: 20px;
-      margin-bottom: 20px;
+    font-size: 20px;
+    margin-bottom: 20px;
   }
 
   .footer-follow img {
-      width: 20%;
-      height: 20%;
+    width: 20%;
+    height: 20%;
   }
 
   .quick-links {
-      margin-bottom: 25px;
+    margin-bottom: 25px;
   }
 
   .quick-links h4 {
-      font-size: 20px;
-      margin-bottom: 30px;
+    font-size: 20px;
+    margin-bottom: 30px;
   }
 
   ul.grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 
   ul.grid li a {
     font-size: 18px;
-}
-
-  #copyright h5 {
-      padding: 20px;
-      font-size: 15px;
   }
 
-
+  #copyright h5 {
+    padding: 20px;
+    font-size: 15px;
+  }
 }
