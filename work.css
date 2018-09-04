@@ -412,6 +412,10 @@ section.bottom-banner {
 }
 
 /* Contact Page */
+.map-mobile {
+  display: none;
+}
+
 .address h3 {
   text-align: center;
   padding: 20px 0 20px 0;
@@ -601,7 +605,10 @@ hr {
   background: black;
 }
 
+
 /* ------------- MEDIA QUERIES --------------------- */
+
+
 /* 1024 tablets - Landscape */
 @media (max-width: 1400px) {
 
@@ -636,6 +643,7 @@ hr {
   }
 
   /*** WORK PAGE 1024 tablets - Landscape ***/
+
   /* Banner 1024 tablets - Landscape */
   .img-wrap {
     height: auto;
@@ -748,6 +756,53 @@ hr {
   div#kt {
     margin-top: 60px;
   }
+
+  /* CONTACT PAGE */
+  section.map {
+    display: none;
+  }
+
+  .map-mobile {
+    display: block;
+  }
+
+  div#flying-logo img {
+    display: none;
+  }
+
+  iframe {
+    height: 300px;
+    width: 100%;
+  }
+
+  .address h3 {
+    margin-top: 60px;
+    font-size: 20px;
+  }
+
+  /* Contact Managers */
+
+
+section.bottom-banner {
+  height: 420px;
+}
+
+.manager img {
+  width: 150px;
+}
+
+.pm-name button {
+  font-size: 15px;
+  padding: 10px 32px;
+}
+
+div.our-contacts {
+  margin-top: 70px;
+  padding-top: 50px;
+}
+
+
+
 
   /* FOOTER 1024 tablets - Landscape */
   .footer-wrap {

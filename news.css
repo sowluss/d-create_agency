@@ -72,7 +72,6 @@ nav ul li a.active::after {
   background: #e65925;
 }
 
-
 /* NEWS PAGE STARTS HERE */
 .banner-section {
   height: 50vh;
@@ -105,7 +104,7 @@ section .container {
 
 .header-overlay {
   height: 50vh;
-  width: 100vw;
+  width: 100%;
   position: absolute;
   top: 194px;
   left: 0;
@@ -164,6 +163,10 @@ section .container {
   color: #e65925;
   background: white;
   transition: 0.5s;
+}
+
+.banner-mobile {
+  display: none;
 }
 
 /* News page title */
@@ -454,4 +457,236 @@ hr {
   font-weight: 100;
   color: white;
   background: black;
+}
+
+/* ------------- MEDIA QUERIES --------------------- */
+/* 1024 tablets - Landscape */
+@media (max-width: 1400px) {
+
+  /* Navigation 1024 tablets - Landscape */
+  nav ul li a {
+    font-size: 18px;
+  }
+
+  /* Have been stuck with the mobile banner img fow the second day!*/
+
+  /* Banner with message - 1024 tablets - Landscape  */
+  .header-overlay {
+    display: none;
+  }
+
+  .banner-message {
+    display: none;
+  }
+
+  .img-wrap {
+    display: block;
+    width: 100%;
+    margin: auto;
+  }
+
+  .img-wrap img {
+    width: auto;
+  }
+
+  /* Banner Message 1024 tablets - Landscape*/
+  .banner-mobile {
+    height: 220px;
+    background: #414042;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    justify-content: centre;
+    flex-direction: column;
+  }
+
+  .banner-mobile h4 {
+    text-transform: uppercase;
+    font-size: 20px;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: white;
+    margin-top: 18px;
+    margin-left: 70px;
+    text-shadow: 0 0 0;
+  }
+
+  .banner-mobile h2 {
+    margin-top: 15px;
+    margin-left: 10px;
+    font-size: 25px;
+    font-family: 'Average', serif;
+    font-style: italic;
+    font-weight: 200;
+    color: white;
+    padding: 0 60px;
+    text-shadow: 0 0 0;
+  }
+
+  .banner-mobile button {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    transition: color 0.5s ease-in-out;
+    font-size: 15px;
+    padding: 10px 32px;
+    margin: 25px 70px;
+  }
+
+  .banner-mobile button:hover {
+    color: #e65925;
+    background: white;
+    transition: 0.5s;
+  }
+
+  /* News Title 1024 tablets - Landscape */
+  .news-section h4 {
+    font-size: 20px;
+  }
+
+  .news-section h2 {
+    font-size: 25px;
+  }
+
+  /* News Blocks 1024 tablets - Landscape */
+  .news-block h4 {
+    font-size: 20px;
+    margin: 15px 5px;
+    padding: 0 5px;
+  }
+
+  .news-block h2 {
+    font-size: 25px;
+    margin: 15px 5px;
+    padding: 0 5px;
+  }
+
+  .news-block p {
+    font-size: 18px;
+    margin: 15px 5px;
+    padding: 0 5px;
+    text-align: justify;
+  }
+
+  /* Blocks Buttons */
+  .news-block button {
+    font-size: 15px;
+    padding: 10px 32px;
+    margin: 15px 5px;
+  }
+
+/* News images */
+
+.news-block-row img {
+  /* makes image stay intact */
+  width: 100%;
+  height: auto;
+}
+
+.news-block h4 {
+  margin-top: 5px;
+  margin-left: 10px;
+}
+
+.news-block h2 {
+  margin-top: 5px;
+  margin-left: 10px;
+  font-size: 22px;
+}
+
+.news-block p {
+  margin-left: 10px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 17px;
+  color: #848484;
+}
+
+.news-block button {
+  font-size: 15px;
+  padding: 10px 32px;
+  margin: 5px 15px;
+}
+
+.second-row {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+/* HIRING page */
+
+.paragraphs p {
+  font-size: 18px;
+  padding: 0 30px;
+}
+
+.share-block h4 {
+  font-size: 20px;
+}
+
+.img-wrap .news-img {
+  width: 130%;
+}
+
+/* NEW STAFF page */
+
+.img-wrap .new-staff {
+  width: 130%;
+}
+
+
+
+
+
+
+  /* FOOTER 1024 tablets - Landscape */
+  .footer-wrap {
+    min-height: 250px;
+  }
+
+  .footer-contact h4 {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+
+  .footer-contact p {
+    font-size: 18px;
+  }
+
+  .footer-follow h4 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .footer-follow img {
+    width: 20%;
+    height: 20%;
+  }
+
+  .quick-links {
+    margin-bottom: 25px;
+  }
+
+  .quick-links h4 {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+
+  ul.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  ul.grid li a {
+    font-size: 18px;
+  }
+
+  #copyright h5 {
+    padding: 20px;
+    font-size: 15px;
+  }
 }
