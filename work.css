@@ -275,7 +275,7 @@ div.work-wrapper,
 /* Second work block */
 div.work-wrapper,
 #work-row-two {
-  margin-top: 0;
+  margin-top: -90px;
 }
 
 /* Communications project */
@@ -347,7 +347,7 @@ div.paragraphs p {
 
 /* PROJECT MANAGER banner */
 section.bottom-banner {
-  height: 40vh;
+  height: 45vh;
   background: #DBDBDB;
   width: 100%;
 }
@@ -406,16 +406,28 @@ section.bottom-banner {
   width: 100%;
 }
 
-.image-wrapper #pw-mobile {
+ .image-wrapper #pw-mobile {
   margin-top: 60px;
 }
 
 .image-wrapper #pw-site {
   margin-top: 70px;
   height: auto;
+} 
+
+/* CONTACT Page */
+
+.our-contacts {
+  padding-bottom: 100px;
+  display: block;
+  margin-top: -50px;
+  height: 700px;
 }
 
-/* Contact Page */
+.bottom-banner {
+  height: 700px;
+}
+
 .map-mobile {
   display: none;
 }
@@ -432,7 +444,7 @@ div.our-contacts {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   margin-top: 50px;
-  padding-top: 40px;
+  padding-top: 30px;
 }
 
 .our-contacts .manager {
@@ -469,6 +481,8 @@ div.our-contacts {
   background: black;
   transition: 0.5s;
 }
+
+/* Map */
 
 .img-wrap iframe {
   width: 100%;
@@ -969,15 +983,6 @@ div.our-contacts {
   padding-top: 60px;
 }
 
-.projects button {
-  
-  margin-top: -50px;
-  
-}
-
-.projects h2 {
-font-size: 20px;
 
 }
 
-}
