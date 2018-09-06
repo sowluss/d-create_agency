@@ -272,6 +272,8 @@ section .container {
 }
 
 /* ------------- HIRING PAGE -------------------- */
+
+
 .img-wrap .news-img {
   filter: grayscale(100%);
 }
@@ -341,13 +343,17 @@ section.text {
 }
 
 /* NEW STAFF page */
-
 .new-staff-mobile {
   display: none;
 }
 
-/* FOOTER */
+/* HIRING PAGE */
 
+div#hiring-mobile {
+  display: none;
+}
+
+/* FOOTER */
 .footer-wrap {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -459,7 +465,6 @@ hr {
 }
 
 /* ------------- MEDIA QUERIES --------------------- */
-
 /* 1024 tablets - Landscape */
 @media (max-width: 1400px) {
 
@@ -469,7 +474,6 @@ hr {
   }
 
   /* Have been stuck with the mobile banner img fow the second day!*/
-
   /* Banner with message - 1024 tablets - Landscape  */
   .header-overlay {
     display: none;
@@ -580,64 +584,60 @@ hr {
     margin: 15px 5px;
   }
 
-/* News images */
+  /* News images */
+  .news-block-row img {
+    /* makes image stay intact */
+    width: 100%;
+    height: auto;
+  }
 
-.news-block-row img {
-  /* makes image stay intact */
-  width: 100%;
-  height: auto;
-}
+  .news-block h4 {
+    margin-top: 5px;
+    margin-left: 10px;
+  }
 
-.news-block h4 {
-  margin-top: 5px;
-  margin-left: 10px;
-}
+  .news-block h2 {
+    margin-top: 5px;
+    margin-left: 10px;
+    font-size: 22px;
+  }
 
-.news-block h2 {
-  margin-top: 5px;
-  margin-left: 10px;
-  font-size: 22px;
-}
+  .news-block p {
+    margin-left: 10px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 17px;
+    color: #848484;
+  }
 
-.news-block p {
-  margin-left: 10px;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 17px;
-  color: #848484;
-}
+  .news-block button {
+    font-size: 15px;
+    padding: 10px 32px;
+    margin: 5px 15px;
+  }
 
-.news-block button {
-  font-size: 15px;
-  padding: 10px 32px;
-  margin: 5px 15px;
-}
+  .second-row {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
 
-.second-row {
-  margin-top: 60px;
-  margin-bottom: 60px;
-}
+  /* HIRING page */
+  .paragraphs p {
+    font-size: 18px;
+    padding: 0 30px;
+  }
 
-/* HIRING page */
+  .share-block h4 {
+    font-size: 20px;
+  }
 
-.paragraphs p {
-  font-size: 18px;
-  padding: 0 30px;
-}
+  .img-wrap .news-img {
+    width: 130%;
+  }
 
-.share-block h4 {
-  font-size: 20px;
-}
-
-.img-wrap .news-img {
-  width: 130%;
-}
-
-/* NEW STAFF page */
-
-.img-wrap .new-staff {
-  width: 130%;
-}
-
+  /* NEW STAFF page */
+  .img-wrap .new-staff {
+    width: 130%;
+  }
 
   /* FOOTER 1024 tablets - Landscape */
   .footer-wrap {
@@ -689,27 +689,43 @@ hr {
 
 @media (max-width: 800px) {
 
+  /* NEW STAFF page */
   section#new-staff {
     display: none;
   }
-  
-  .new-staff-mobile{
+
+  .new-staff-mobile {
     display: block;
     width: 100%;
     margin: auto;
-    position: absolute;
-    top: 194px;
+    position: relative;
+    top: -4px;
     left: 0;
-    overflow: hidden;
   }
 
   img.new-staff {
     width: 100%;
   }
 
-  .staff-mob-text {
-    top: 500px;
+  /* HIRING page */
+
+  section#hiring {
+    display: none;
+  }
+
+  div#hiring-mobile {
     display: block;
   }
 
+  img.hiring-mobile {
+    width: 100%;
+    margin: auto;
+    position: relative;
+    top: -4px;
+    left: 0;
+  }
+
+  .hiring-wrap img {
+    filter: grayscale(100%);
+  }
 }
