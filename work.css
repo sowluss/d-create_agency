@@ -278,6 +278,10 @@ div.work-wrapper,
   margin-top: -90px;
 }
 
+.work-wrapper-mobile {
+  display: none;
+}
+
 /* Communications project */
 h4#jm {
   margin-top: 80px;
@@ -301,6 +305,7 @@ div.paragraphs p {
 }
 
 /* Share block */
+
 .share-block {
   text-align: center;
   margin-top: 40px;
@@ -990,6 +995,9 @@ div.our-contacts {
 
 @media (max-width: 670px) {
 
+  header {
+    padding: 10px 60px;
+}
 
 /* Work Page */
 
@@ -1053,6 +1061,55 @@ div.our-contacts {
   padding-bottom: 40px;
 }
 
+/* COMMUNICATIONS page */
+
+div.paragraphs p {
+   padding: 0 20px;
+}
+
+h4#jm {
+  margin-top: 10px;
+}
+
+/* Share block */
+
+.share-block {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+/* Project Manager */
+
+
+section.bottom-banner {
+  height: 420px;
+}
+
+.pm-image {
+  margin-top: 30px;
+  margin-left: 100px;
+}
+
+.pm-image img {
+  width: 150px;
+}
+
+.pm-name h3 {
+  font-size: 18px;
+}
+
+.pm-social {
+  margin-top: 40px;
+  margin-right: 20px;
+}
+
+.pm-social img {
+  width: 60px;
+}
+
+h4.connect {
+  display: none;
+}
 
 
 
