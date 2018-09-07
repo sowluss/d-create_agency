@@ -982,7 +982,135 @@ div.our-contacts {
 .work-section h4 {
   padding-top: 60px;
 }
-
-
 }
 
+
+
+/******* SMARTPHONE media quries 670px *******/
+
+@media (max-width: 670px) {
+
+
+/* Work Page */
+
+.work-wrapper {
+  display: none
+}
+ /* Our Work section */
+ .work-wrapper {
+  display: none
+}
+
+.work-wrapper-mobile {
+  display: block;
+  margin-top: 60px;
+  text-align: center;
+}
+.work-wrapper-mobile h4 {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #e65925;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.work-wrapper-mobile h2 {
+  margin: 25px 20px;
+  font-size: 20px;
+  font-family: 'Average', serif;
+  font-style: italic;
+  font-weight: 200;
+  color: #515151;
+  text-align: center;
+}
+
+.work-wrapper-mobile button {
+  background-color: transparent;
+  border: 2px solid black;
+  color: black;
+  font-size: 20px;
+  font-family: 'Source Sans Pro', sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  transition: color 0.5s ease-in-out;
+  font-size: 15px;
+  padding: 10px 32px;
+}
+.work-wrapper-mobile button:hover {
+  color: white;
+  background: black;
+  transition: 0.5s;
+}
+
+.projects-mobile img {
+  width: 100%;
+}
+
+.projects-mobile {
+  padding-bottom: 40px;
+}
+
+
+
+
+  /* Footer - mobile */
+
+  .footer-wrap {
+    display: block;
+    min-height: 500px;
+    padding-top: 40px;
+}
+
+.footer-contact h4 {
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.footer-contact p {
+    font-size: 18px;
+}
+
+.footer-follow {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.footer-follow h4 {
+    font-size: 20px;
+    margin-top: 45px;
+}
+
+.footer-follow img {
+    margin-top: 15px;
+    padding-right: 20px;
+    background: none;
+    width: 70px;
+}
+
+.footer-follow img:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.quick-links {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.quick-links h4 {
+    font-size: 20px;
+    margin-top: 45px;
+}
+
+.quick-links ul li {
+    margin-bottom: 20px;
+}
+
+.quick-links ul li a {
+    font-size: 18px;
+}
+}
