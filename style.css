@@ -832,7 +832,8 @@ hr {
     }
 }
 
-/******* SMARTPHONE media quries *******/
+/******* SMARTPHONE media quries 670px *******/
+
 @media (max-width: 670px) {
 
     /* HOME page */
@@ -871,11 +872,71 @@ hr {
         display: none
     }
 
+    .work-wrapper-mobile {
+        display: block;
+        margin-top: 60px;
+        text-align: center;
+    }
+    .work-wrapper-mobile h4 {
+        text-transform: uppercase;
+        font-size: 20px;
+        font-family: 'Source Sans Pro', sans-serif;
+        color: #e65925;
+        text-align: center;
+        padding-bottom: 30px;
+    }
+
+    .work-wrapper-mobile h2 {
+        margin: 25px 20px;
+        font-size: 20px;
+        font-family: 'Average', serif;
+        font-style: italic;
+        font-weight: 200;
+        color: #515151;
+        text-align: center;
+    }
+
+    .work-wrapper-mobile button {
+        background-color: transparent;
+        border: 2px solid black;
+        color: black;
+        font-size: 20px;
+        font-family: 'Source Sans Pro', sans-serif;
+        text-transform: uppercase;
+        text-decoration: none;
+        display: inline-block;
+        cursor: pointer;
+        transition: color 0.5s ease-in-out;
+        font-size: 15px;
+        padding: 10px 32px;
+    }
+    .work-wrapper-mobile button:hover {
+        color: white;
+        background: black;
+        transition: 0.5s;
+    }
+
+    .projects-mobile img {
+        width: 100%;
+    }
+
     /* Services Columns */
     .service-cols {
         margin-top: 60px;
         display: block;
         height: 30%;
+    }
+
+    .service-desc p {
+        min-height: 40px;
+    }
+
+    .service-desc {
+        margin-bottom: 60px;
+    }
+
+    .services-wrap {
+        margin-top: 60px;
     }
 
     /* Contact section */
@@ -899,6 +960,7 @@ hr {
     }
 
     /* Footer - mobile */
+
     .footer-wrap {
         display: block;
         min-height: 500px;
