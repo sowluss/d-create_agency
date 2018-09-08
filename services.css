@@ -24,8 +24,6 @@ nav {
   width: 100%;
   height: 61px;
   background: rgba(237, 237, 237, 0.8);
-  /* border-bottom: 1px solid #7A7A7A; */
-  /* scroll and sticky navbar */
   position: sticky;
   top: 0;
   /* fixed nav click problem in Chrome with: */
@@ -242,6 +240,12 @@ div.first-one {
 
 div.third-row {
   margin-top: 90px;
+}
+
+/* Block images */
+
+.mobile-img {
+  display: none;
 }
 
 
@@ -466,3 +470,134 @@ hr {
       font-size: 15px;
   }
 }
+
+@media (max-width: 800px) {
+  header {
+    padding: 10px 40px;
+}
+
+.news-section h2 {
+  font-size: 20px;
+  margin: 20px 10px;
+}
+
+/* Services block */
+
+#services-wrapper {
+  
+  display: block;
+  width: 100%;
+}
+
+.services button {
+  width: 100%;
+  font-size: 18px;
+}
+
+.services .current {
+  color: #e65925;
+  background:#EDEDED;
+  transition: 0.5s;
+  cursor: pointer;
+  /* border: 2px solid #e65925; */
+}
+
+
+/* Service blocks */
+
+.news-block-row {
+  display: block;
+}
+
+/* Images */
+
+.desktop-img {
+  display: none;
+}
+
+.mobile-img {
+  display: block;
+}
+
+.news-block-row {
+  margin-bottom: 50px;
+}
+
+.news-block h4 {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.news-block h2 {
+  text-align: center;
+  font-size: 20px;
+}
+
+.news-block {
+  text-align: center;
+}
+
+
+/* Footer - mobile */
+
+.footer-wrap {
+  display: block;
+  min-height: 500px;
+  padding-top: 40px;
+}
+
+.footer-contact h4 {
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+.footer-contact p {
+  font-size: 18px;
+}
+
+.footer-follow {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.footer-follow h4 {
+  font-size: 20px;
+  margin-top: 45px;
+}
+
+.footer-follow img {
+  margin-top: 15px;
+  padding-right: 20px;
+  background: none;
+  width: 70px;
+}
+
+.footer-follow img:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.quick-links {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.quick-links h4 {
+  font-size: 20px;
+  margin-top: 45px;
+}
+
+.quick-links ul li {
+  margin-bottom: 20px;
+}
+
+.quick-links ul li a {
+  font-size: 18px;
+}
+
+}
+
+
+
+

@@ -667,7 +667,6 @@ hr {
 
   /*** WORK PAGE 1024 tablets - Landscape ***/
 
-  
   /* Banner 1024 tablets - Landscape */
 
   .img-wrap {
@@ -837,8 +836,6 @@ div.our-contacts {
 }
 
 
-
-
   /* FOOTER 1024 tablets - Landscape */
   .footer-wrap {
     min-height: 250px;
@@ -887,7 +884,8 @@ div.our-contacts {
   }
 }
 
-/* MEDIA QUERIES 800px */
+
+/* ******* MEDIA QUERIES 800px ******* */
 
 @media (max-width: 800px) {
   /* VIDEO section */
@@ -900,7 +898,7 @@ div.our-contacts {
     min-height: 160px;
 }
 
-/* Work Page */
+/* WORK PAGE */
 
 /* Banner with message */
 
@@ -987,8 +985,14 @@ div.our-contacts {
 .work-section h4 {
   padding-top: 60px;
 }
+
+ /* KT Sports Page */
+
+ p.kt-text {
+  padding: 0 30px;
 }
 
+}
 
 
 /******* SMARTPHONE media quries 670px *******/
@@ -1171,3 +1175,4 @@ h4.connect {
     font-size: 18px;
 }
 }
+
