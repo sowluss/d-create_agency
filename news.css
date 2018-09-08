@@ -271,6 +271,10 @@ section .container {
   transition: 0.5s;
 }
 
+img#smartphone {
+  display: none;
+}
+
 /* ------------- HIRING PAGE -------------------- */
 
 .img-wrap .news-img {
@@ -464,6 +468,8 @@ hr {
 }
 
 /* ------------- MEDIA QUERIES --------------------- */
+
+
 /* 1024 tablets - Landscape */
 @media (max-width: 1400px) {
 
@@ -726,6 +732,7 @@ hr {
 
 
   /* NEW STAFF page */
+
   section#new-staff {
     display: none;
   }
@@ -745,6 +752,18 @@ hr {
 
   img.new-staff {
     width: 100%;
+  }
+
+  img#desktop {
+    display: none;
+  }
+
+  img#smartphone {
+    display: block;
+  }
+
+  .news-block {
+    margin-top: 40px;
   }
 
   /* HIRING page */
@@ -772,6 +791,8 @@ hr {
   .hiring-wrap img {
     filter: grayscale(100%);
   }
+
+  
 
 
 
