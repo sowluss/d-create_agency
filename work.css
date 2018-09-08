@@ -816,7 +816,6 @@ hr {
 
   /* Contact Managers */
 
-
 section.bottom-banner {
   height: 420px;
 }
@@ -1115,9 +1114,45 @@ h4.connect {
   display: none;
 }
 
+/* CONTACTS PAGE */
+
+/*
+.our-contacts {
+  padding-bottom: 100px;
+  display: block;
+  margin-top: 50px;
+  height: 700px;
+}
+
+.bottom-banner {
+  height: 700px;
+  display: block;
+}
+*/
+
+section.mobile-banner {
+  height: 1100px;
+  background: #DBDBDB;
+  width: 100%;
+}
+
+div.our-contacts {
+  display: block;
+  margin-top: 50px;
+  padding-top: 30px;
+  position: relative;
+}
 
 
   /* Footer - mobile */
+
+  /* #mobile-footer {
+    display: none;
+  }
+
+  .mobile-copyright {
+    display: none;
+  } */
 
   .footer-wrap {
     display: block;
