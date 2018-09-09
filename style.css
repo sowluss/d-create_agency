@@ -67,6 +67,11 @@ nav ul li a:hover::after {
     background: #e65925;
 }
 
+/* Mobile Navbar */
+.responsive-bar {
+    display: none;
+}
+
 /* VIDEO */
 .video-section {
     height: 50vh;
@@ -833,20 +838,89 @@ hr {
 }
 
 /******* SMARTPHONE media quries 670px *******/
-
 @media (max-width: 670px) {
 
     /* HOME page */
     header {
-        padding: 10px 50px;
+        padding: 5px 10px;
     }
 
+    /* Navigation */
+    nav {
+        width: 100%;
+        height: 300px;
+        background: rgba(237, 237, 237, 0.8);
+        /* position: sticky; */
+        position: relative;
+        top: 0;
+        z-index: 255;
+    }
+
+    nav ul {
+        float: none;
+        display: block;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav ul li {
+        /* display: block; */
+        padding: 5px 5px;
+    }
+
+    nav ul li a {
+        font-size: 15px;
+        margin: 3px 5px;
+        text-align: center;
+    }
+
+    nav ul li a.active {
+        border-bottom: 4px solid #e65925;
+    }
+
+    /* Navigation bottom-border-transition - expand from middle */
+    nav ul li a::after {
+        height: 4px;
+    }
+
+    nav ul li a:hover::after {
+        width: 25%;
+    }
+
+    /* Mobile Navbar */
+    .responsive-bar {
+        display: block;
+        width: 100%;
+        background: rgba(237, 237, 237, 0.8);
+        padding: 10px 30px;
+        box-sizing: border-box;
+    }
+
+    .responsive-bar h4 {
+        margin: 0;
+        padding: 0;
+        text-transform: uppercase;
+        font-size: 18px;
+        font-family: 'Source Sans Pro', sans-serif;
+        color: #e65925;
+        float: right;
+        padding: 5px 10px;
+        border: 1.5px solid #e65925;
+        cursor: pointer;
+    }
+
+    /* VIDEO section */
+    section.video-section {
+        display: none;
+    }
+
+    /*
     .video-content h1 {
         font-size: 25px;
         text-align: center;
         line-height: 50px;
     }
-
+    */
     #word {
         text-shadow: 1px 1px 2px #170600;
     }
@@ -877,6 +951,7 @@ hr {
         margin-top: 60px;
         text-align: center;
     }
+
     .work-wrapper-mobile h4 {
         text-transform: uppercase;
         font-size: 20px;
@@ -910,6 +985,7 @@ hr {
         font-size: 15px;
         padding: 10px 32px;
     }
+
     .work-wrapper-mobile button:hover {
         color: white;
         background: black;
@@ -960,7 +1036,6 @@ hr {
     }
 
     /* Footer - mobile */
-
     .footer-wrap {
         display: block;
         min-height: 500px;
@@ -990,6 +1065,7 @@ hr {
         margin-top: 15px;
         padding-right: 20px;
         background: none;
+        width: 70px;
     }
 
     .footer-follow img:hover {
