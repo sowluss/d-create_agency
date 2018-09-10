@@ -32,16 +32,25 @@
         <a href="work.html">Work</a>
       </li>
       <li>
-        <a href="news/news.html">News</a>
+        <a href="news.html">News</a>
       </li>
       <li>
         <a href="services.html" class="active cool-link">Services</a>
       </li>
       <li>
-        <a href="#">Contact</a>
+        <a href="contact.html">Contact</a>
       </li>
     </ul>
   </nav>
+
+  <div style="clear: right"></div>
+
+  <!-- Mobile Navbar -->
+
+  <div class="responsive-bar">
+      <h4 class="menu">Menu</h4>
+      <div style="clear: both"></div>
+  </div>
 
 <!-- Our Services title -->
 
@@ -56,16 +65,16 @@
 
 <div id="services-wrapper">
     <div class="services">
-        <button class="button current">All</button>
+        <a href="services.html"><button class="button current">All</button></a>
     </div>
   <div class="services">
-      <button class="button">Research and Strategy</button>
+      <a href="research-and-strategy.html"><button class="button">Research and Strategy</button></a>
   </div>
   <div class="services">
-    <button class="button">Creative</button>
+    <a href="creative.html"><button class="button">Creative</button></a>
 </div>
 <div class="services">
-  <button class="button">Delivery</button>
+  <a href="delivery.html"><button class="button">Delivery</button></a>
 </div>
 </div>
 
@@ -83,13 +92,15 @@
 </div>
 </div>
 <div class="news-block-row">
+    <img src="services/jh-1.jpg" class="mobile-img">
+    <!-- <img src="services/jh-1.jpg" id="jh-mobile"> -->
     <div class="news-block">
         <h4>Research and Strategy</h4>
         <h2>Digital Strategy Development</h2>
         <p>One of the main challenges for brands is developing a digital strategy that is coherent and consistent, representative of brand purpose and aligned with audience needs. We bring a fresh perspective to the challenge, using our insight our specialists bring all of those strands together to deliver stronger results.</p>
         
     </div>
-    <img src="services/jh-1.jpg" alt="">
+    <img src="services/jh-1.jpg" class="desktop-img">
   </div>
 
 </div>
@@ -102,23 +113,23 @@
         <h4>Research and Strategy</h4>
         <h2>Social Listening</h2>
         <p>Social insight is essential in getting closer to what motivates and inspires people to take action. It also helps us to identify just where and when those conversations are happening.</p>
-        <a href="hiring.html"><button class="button listening">View Project</button></a>
     </div>
     </div>
     <div class="news-block-row">
+        <img src="services/competative.jpeg" class="mobile-img">
         <div class="news-block">
             <h4>Research and Strategy</h4>
             <h2>Competitor Analysis</h2>
             <p>To create standout, we need to analyse what's happening in your market place. We don't stop there, we also take into account our experiences of working in other sectors to build in fresh thinking.</p>
             
         </div>
-        <img src="services/competative.jpeg" alt="">
+        <img src="services/competative.jpeg" class="desktop-img">
       </div>
     
     </div>
 
 <!-- Research & Strategy  Third Row -->
-<div class="news-block-wrapper third-row">
+<div class="news-block-wrapper">
     <div class="news-block-row">
     <img src="services/user.jpeg">
     <div class="news-block">
@@ -128,20 +139,20 @@
     </div>
     </div>
     <div class="news-block-row">
+        <img src="services/analytics.jpeg" class="mobile-img">
         <div class="news-block">
             <h4>Research and Strategy</h4>
             <h2>Analytics and Reporting</h2>
             <p>We're results driven. That's why we'll spend time getting to know your business goals and objectives during our discover phase, so we can make sure we're always achieving and exceeding them.</p>
-            
         </div>
-        <img src="services/analytics.jpeg" alt="">
+        <img src="services/analytics.jpeg" class="desktop-img">
       </div>
     
     </div>
 
 
 <!-- CREATIVE First row -->
-<div class="news-block-wrapper third-row">
+<div class="news-block-wrapper">
     <div class="news-block-row">
     <img src="services/user-exp.jpg">
     <div class="news-block">
@@ -151,60 +162,63 @@
     </div>
     </div>
     <div class="news-block-row">
+        <img src="services/living-solutions.jpeg" class="mobile-img">
         <div class="news-block">
             <h4>Creative</h4>
             <h2>User Interface (UI) Design</h2>
             <p>A great UI, is one that works subtly in the background to allow users to complete their task with ease. Accessible, adaptive, consistent and intuitive design are our fundamental goals.</p>
             <div class="services">
-                <a href="living-solutions.html"><button class="button listening">View Project</button></a>
+                <a href="living-solutions.html"><button class="button listening services-media">View Project</button></a>
               </div>
         </div>
-        <img src="services/living-solutions.jpeg" alt="">
+        <img src="services/living-solutions.jpeg" class="desktop-img">
       </div>
     
     </div>
 
-   <!-- DELIVERY second row -->
+   <!-- CREATIVE last and DELIVERY first row -->
 
-   <div class="news-block-wrapper third-row">
+   <div class="news-block-wrapper">
       <div class="news-block-row">
-      <img src="services/TK-Sport.jpg">
+      <img src="services/KT-Sport.jpg">
       <div class="news-block">
           <h4>Creative</h4>
           <h2>Information Architecture (IA)</h2>
           <p>When users browse a website or an app looking for key information, they want to find it fast. IA will also have a tremendous impact on SEO. Our team are skilled in prioritising what matters and excluding what doesn't.</p>
-          <a href="tk-sport.html"><button class="button listening">View Project</button></a>
+          <a href="kt-sport.html"><button class="button listening">View Project</button></a>
       </div>
       </div>
       <div class="news-block-row">
+          <img src="services/front-end-dev.jpg" class="mobile-img">
           <div class="news-block">
               <h4>Delivery</h4>
               <h2>Front End Development</h2>
               <p>Our html, css and javascript expertise brings our creative team’s work to life and make sure it looks great on all devices</p>
           </div>
-          <img src="services/front-end-dev.jpg" alt="">
+          <img src="services/front-end-dev.jpg" class="desktop-img">
         </div>
       
       </div>
 
-      <div class="news-block-wrapper third-row">
+
+      <div class="news-block-wrapper">
           <div class="news-block-row">
           <img src="services/back-end-dev.jpeg">
           <div class="news-block">
               <h4>Delivery</h4>
               <h2>Back End Development</h2>
               <p>We use best-in-class products such as Drupal and Wordpress as the basis for our websites and applications and have built new Drupal 8 modules and bespoke CRM and subscription management systems for many of our clients.</p>
-              <a href="#"><button class="button listening">View Project</button></a>
           </div>
           </div>
           <div class="news-block-row">
+              <img src="services/system-integ.jpg" class="mobile-img">
               <div class="news-block">
                   <h4>Delivery</h4>
                   <h2>System Integration</h2>
                   <p>We use our knowledge of open source technologies to deliver solutions for document and file management, knowledge-sharing and business workflow. We can also integrate with secure payment gateways from PayPal, SagePay, Go Cardless, Stripe, to WorldPay.</p>
                   <a href="old-spike-roastery.html"><button class="button listening">View Project</button></a>
               </div>
-              <img src="services/system-integ.jpg" alt="">
+              <img src="services/system-integ.jpg" class="desktop-img">
             </div>
           
           </div>
@@ -227,21 +241,18 @@
     </div>
     <div class="quick-links">
       <h4>Quick Links</h4>
-      <ul>
+      <ul class="grid">
         <li>
-          <a href="#">Work</a>
+          <a href="work.html">Work</a>
         </li>
         <li>
-          <a href="#">News</a>
+          <a href="news.html">News</a>
         </li>
         <li>
-          <a href="#">Services</a>
+          <a href="services.html">Services</a>
         </li>
         <li>
-          <a href="#">Team</a>
-        </li>
-        <li>
-          <a href="#">Contact</a>
+          <a href="contact.html">Contact</a>
         </li>
       </ul>
 
@@ -250,7 +261,7 @@
   </div>
   
   <div id="copyright">
-    <h5>&copy; Copyrighy, D-Create, 2018</h5>
+    <h5>&copy; Copyright, D-Create, 2018</h5>
   </div>
 
 

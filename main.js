@@ -4,6 +4,13 @@ if (window.chrome)
     $(this).attr('src', $(this).attr('src').replace(".mp4", "_c.mp4"));
   });
 
+  // Mobile Navbar
+  $(document).ready(function(){
+    $(".menu").click(function(){
+      $("nav").slideToggle(500);
+    })
+  })
+
 
 // change last words in the sentence in the video showcase
 $(function () {
@@ -91,6 +98,7 @@ $("#creative").on('mouseenter', function() {
 });
 
 // 'Delivery' Image
+
 $("#delivery").on('mouseenter', function() {
   $('#delivery-button').css("background-color", "black").css("transition", ".5s").css("color", "white");
   $("#delivery").on('mouseleave', function() {
@@ -99,8 +107,4 @@ $("#delivery").on('mouseenter', function() {
 });
 
 
-// Map page
 
-$(document).ready(function() {
-$('#flying').animate({top: "100%"});
-});

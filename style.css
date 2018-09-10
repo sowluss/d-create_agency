@@ -138,6 +138,10 @@ section .container {
     /* text-shadow: 1px 1px 2px #170600; */
 }
 
+.mob-img-wrap {
+    display: none;
+}
+
 /*  WHO WE ARE SECTION */
 .about-section {
     margin-top: 70px;
@@ -799,13 +803,28 @@ hr {
 @media (max-width: 790px) {
 
     /* VIDEO section */
-    .video-content h1 {
-        font-size: 30px;
+
+    .video-section {
+        display: none;
     }
 
-    .projects h2 {
-        min-height: 160px;
+    .mob-img-wrap {
+        display: block;
+        position: relative;
+        text-align: center;
     }
+
+    .mob-img-wrap .video-mobile {
+        width: 100%;
+        top: 50%;
+        left: 50%;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        color: #EDEDED;
+        font-size: 30px;
+        font-family: 'Amiko', sans-serif;
+    }
+
 
     /* SERVICES section */
     .service-cols {
@@ -842,7 +861,7 @@ hr {
 
     /* HOME page */
     header {
-        padding: 5px 10px;
+        padding: 5px 30px;
     }
 
     /* Navigation */
@@ -852,8 +871,6 @@ hr {
         background: rgba(237, 237, 237, 0.8);
         /* position: sticky; */
         position: relative;
-        top: 0;
-        z-index: 255;
     }
 
     nav ul {
@@ -914,16 +931,14 @@ hr {
         display: none;
     }
 
-    /*
-    .video-content h1 {
-        font-size: 25px;
-        text-align: center;
-        line-height: 50px;
+    .mob-img-wrap .video-mobile {
+        font-size: 30px;
+        line-height: 2em;
+        padding: 0 25px;
     }
-    */
-    #word {
-        text-shadow: 1px 1px 2px #170600;
-    }
+
+    
+    /* Abour section */
 
     .about-section h2 {
         margin-top: 25px;
