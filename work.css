@@ -326,32 +326,31 @@ div.paragraphs p {
 
 .social-icons {
   margin-top: 25px;
+ 
 }
 
 .social-icons img {
-  margin-right: 20px;
-  transition-property: all;
-  transition-duration: 1s;
+ margin-right: 10px;
+ transition-property: all;
+ transition-duration: 1s;
+ transition-timing-function: ease-in-out;
 }
 
 .social-icons img.l-blue:hover {
   content: url(icons/twitter-white.png);
   cursor: pointer;
-  transition: 1s;
   transform: rotateY(180deg);
 }
 
 .social-icons img.blue:hover {
   content: url(icons/linkedin-white.png);
   cursor: pointer;
-  transition: 1s;
   transform: rotateY(180deg);
 }
 
 .social-icons img.orange:hover {
   content: url(icons/email-white.png);
   cursor: pointer;
-  transition: 1s;
   transform: rotateY(180deg);
 }
 

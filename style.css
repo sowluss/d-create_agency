@@ -515,6 +515,10 @@ div.test img {
     cursor: pointer;
 }
 
+#mob-contact-wrapper {
+    display: none;
+}
+
 /* removes blue button border in Chrome */
 button:focus {
     outline: 0;
@@ -800,7 +804,9 @@ hr {
     }
 }
 
-@media (max-width: 790px) {
+/********* MEDIA QUERIES 1000px *********/
+
+@media (max-width: 1000px) {
 
     /* VIDEO section */
 
@@ -826,7 +832,7 @@ hr {
     }
 
 
-    /* SERVICES section */
+    /* SERVICES section  */
     .service-cols {
         margin-top: 25px;
         height: 700px;
@@ -846,18 +852,55 @@ hr {
         min-height: 300px;
     }
 
-    /* Contact section */
-    #contact-wrapper {
-        min-height: 150px;
-    }
+ /* CONTACT section */
+ #contact-wrapper {
+    display: none;
+  }
 
-    .contact h2 {
-        padding-left: 100px;
-    }
+  #mob-contact-wrapper {
+      display: block;
+      min-height: 160px;
+      justify-content: center;
+      text-align: center;
+      background: #e65925;
+     
+  }
+
+  #mob-contact-wrapper h2 {
+      font-size: 25px;
+      font-family: 'Average', serif;
+      font-style: italic;
+      font-weight: 100;
+      color: white;
+      padding: 25px 20px 5px 20px;
+  }
+  
+  #mob-contact-wrapper button {
+      font-size: 15px;
+      padding: 10px 32px;
+      margin-top: 10px;
+      background-color: transparent;
+      border: 2px solid white;
+      color: white;
+      font-family: 'Source Sans Pro', sans-serif;
+      text-transform: uppercase;
+      text-decoration: none;
+      cursor: pointer;
+      transition: color 0.5s ease-in-out;
+  }
+  
+  #mob-contact-wrapper button:hover {
+      color: #e65925;
+      background: white;
+      transition: 0.5s;
+      cursor: pointer;
+  }
 }
 
-/******* SMARTPHONE media quries 670px *******/
-@media (max-width: 670px) {
+
+/******* SMARTPHONE media queries 800px *******/
+
+@media (max-width: 800px) {
 
     /* HOME page */
     header {
@@ -1030,26 +1073,6 @@ hr {
         margin-top: 60px;
     }
 
-    /* Contact section */
-    #contact-wrapper {
-        display: block;
-        padding: 20px 0 30px 0;
-    }
-
-    .contact h2 {
-        width: 400px;
-        font-size: 20px;
-        margin: 20px 40px 20px 10px;
-        text-align: center;
-    }
-
-    .contact button {
-        font-size: 15px;
-        padding: 10px 32px;
-        display: block;
-        margin: 0 auto;
-    }
-
     /* Footer - mobile */
     .footer-wrap {
         display: block;
@@ -1107,3 +1130,4 @@ hr {
         font-size: 18px;
     }
 }
+
