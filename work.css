@@ -166,7 +166,7 @@ section .container {
 
 /* Work page title */
 .work-section {
-  margin-top: 70px;
+  margin-top: 120px;
 }
 
 .work-section h4 {
@@ -328,7 +328,6 @@ div.paragraphs p {
 
 .social-icons {
   margin-top: 25px;
- 
 }
 
 .social-icons img {
@@ -470,6 +469,7 @@ div.our-contacts {
 
 .manager img {
   border-radius: 50%;
+  width: 180px;
 }
 
 .pm-name {
@@ -481,16 +481,16 @@ div.our-contacts {
   background-color: transparent;
   border: 2px solid black;
   color: black;
-  font-size: 20px;
   font-family: 'Source Sans Pro', sans-serif;
   text-transform: uppercase;
-  padding: 15px 42px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   margin: 30px 70px;
   cursor: pointer;
   transition: color 0.5s ease-in-out;
+  font-size: 18px;
+  padding: 10px 32px;
 }
 
 .pm-name button:hover {
@@ -643,6 +643,75 @@ hr {
 
 /* ------------- MEDIA QUERIES --------------------- */
 
+@media (max-width: 1440px) {
+
+  .projects h2 {
+    font-size: 30px;
+  }
+
+/* PROJECT MANAGER banner */
+section.bottom-banner {
+  height: 400px;
+  background: #DBDBDB;
+  width: 100%;
+}
+
+.bottom-banner h4 {
+  padding-top: 60px;
+}
+
+.pm-image img {
+  width: 170px;
+}
+
+.pm-name h3 {
+  font-family: 'Lato', sans-serif;
+  font-size: 25px;
+  font-weight: 100;
+  color: #575757;
+}
+
+.pm-social {
+  margin-right: 250px;
+  margin-top: 20px;
+}
+
+.pm-social img {
+  margin-right: 15px;
+}
+
+.pm-social img:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+@keyframes flyinglogo {
+  0% {
+    left: 44%;
+    top: -400px;
+  }
+
+  100% {
+    left: 44%;
+    top: 50%;
+  }
+}
+
+/* CONTACT Page */
+
+.manager img {
+  width: 150px;
+  margin-top: 15px;
+}
+
+.pm-name button {
+  font-size: 15px;
+  padding: 10px 32px;
+}
+
+
+}
 
 /* 1400px */
 @media (max-width: 1400px) {
@@ -1016,7 +1085,23 @@ div.our-contacts {
 }
 
 
-/******* SMARTPHONE media quries 670px *******/
+@media (max-width: 790px) {
+
+  section.mobile-banner {
+    height: 1150px;
+    background: #DBDBDB;
+    width: 100%;
+  }
+
+  div.our-contacts {
+    display: block;
+    margin-top: 50px;
+    padding-top: 30px;
+    position: relative;
+  }
+}
+
+/******* 670px *******/
 
 @media (max-width: 670px) {
 
@@ -1160,6 +1245,10 @@ section.banner-section {
   padding-bottom: 40px;
 }
 
+.pm-social img {
+  margin-top: 60px;
+}
+
 /* COMMUNICATIONS page */
 
 div.paragraphs p {
@@ -1224,7 +1313,7 @@ width: 100%;
 
 
 section.mobile-banner {
-  height: 1100px;
+  height: 1150px;
   background: #DBDBDB;
   width: 100%;
 }
@@ -1295,3 +1384,35 @@ div.our-contacts {
 }
 }
 
+@media (max-width: 480px) {
+
+  section.bottom-banner {
+    height: 550px;
+  }
+
+  .contact-partner {
+    display: block;
+  }
+  
+  .pm-image {
+    margin-top: 50px;
+    margin: 0 auto;
+  }
+  
+  .pm-image img {
+    width: 150px;
+    margin-top: 60px;
+  }
+  
+  .pm-social {
+    margin: 0 auto;
+  }
+  
+  .pm-social img {
+    width: 60px;
+  }
+  
+  h4.connect {
+    display: none;
+  }
+}
