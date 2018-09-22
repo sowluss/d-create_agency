@@ -640,8 +640,43 @@ hr {
   background: black;
 }
 
+/* removes blue button border in Chrome */
+button:focus {
+  outline: 0;
+}
+
 
 /* ------------- MEDIA QUERIES --------------------- */
+
+@media (max-width: 1920px) {
+  @keyframes flyinglogo {
+    0% {
+      left: 44%;
+      top: -400px;
+    }
+  
+    100% {
+      left: 45%;
+      top: 40%;
+    }
+  }
+
+}
+
+@media (max-width: 1680px) {
+  @keyframes flyinglogo {
+    0% {
+      left: 44%;
+      top: -400px;
+    }
+  
+    100% {
+      left: 45%;
+      top: 42%;
+    }
+  }
+
+}
 
 @media (max-width: 1440px) {
 
@@ -698,6 +733,40 @@ section.bottom-banner {
   }
 }
 
+/* Communications Page */
+
+.work-section {
+  margin-top: 60px;
+}
+
+div.work-wrapper, #work-row-two {
+  margin-top: -20px;
+}
+
+/* Living Solutions Page */
+
+.image-wrapper #pw-site {
+  margin-top: 20px;
+}
+
+/* Digital Experience Page */
+
+.challenge-img {
+  margin-top: 30px;
+}
+
+/* Old Spike Roastery */
+
+.image-wrapper #pw-site {
+margin-top: 60px;
+}
+
+.roastery-page {
+  margin-top: 60px;
+}
+
+
+
 /* CONTACT Page */
 
 .manager img {
@@ -709,7 +778,6 @@ section.bottom-banner {
   font-size: 15px;
   padding: 10px 32px;
 }
-
 
 }
 
