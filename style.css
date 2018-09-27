@@ -1148,3 +1148,12 @@ hr {
         cursor: pointer;
     }
 }
+
+/********* 480px *************/
+@media (max-width: 480px) {
+    .video-mobile {
+        font-size: 25px !important;
+        line-height: 1.5em;
+    }
+
+}
