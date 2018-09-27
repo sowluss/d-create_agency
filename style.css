@@ -638,7 +638,7 @@ hr {
 
 
 
-/* ------------- MEDIA QUERIES --------------------- */
+/* ---------------------- MEDIA QUERIES ------------------------- */
 
 @media (max-width: 1440px) {
 
@@ -820,33 +820,9 @@ hr {
     }
 }
 
-/********* MEDIA QUERIES 1000px *********/
+/************************ 1000px *************************/
 
 @media (max-width: 1000px) {
-
-    /* VIDEO section */
-
-    .video-section {
-        display: none;
-    }
-
-    .mob-img-wrap {
-        display: block;
-        position: relative;
-        text-align: center;
-    }
-
-    .mob-img-wrap .video-mobile {
-        width: 100%;
-        top: 50%;
-        left: 50%;
-        position: absolute;
-        transform: translate(-50%, -50%);
-        color: #EDEDED;
-        font-size: 30px;
-        font-family: 'Amiko', sans-serif;
-    }
-
 
     /* SERVICES section  */
     .service-cols {
@@ -868,135 +844,91 @@ hr {
         min-height: 300px;
     }
 
- /* CONTACT section */
- #contact-wrapper {
-    display: none;
-  }
+    /* CONTACT section */
+    #contact-wrapper {
+        display: none;
+    }
 
-  #mob-contact-wrapper {
-      display: block;
-      min-height: 160px;
-      justify-content: center;
-      text-align: center;
-      background: #e65925;
-     
-  }
+    #mob-contact-wrapper {
+        display: block;
+        min-height: 160px;
+        justify-content: center;
+        text-align: center;
+        background: #e65925;
 
-  #mob-contact-wrapper h2 {
-      font-size: 25px;
-      font-family: 'Average', serif;
-      font-style: italic;
-      font-weight: 100;
-      color: white;
-      padding: 25px 20px 5px 20px;
-  }
-  
-  #mob-contact-wrapper button {
-      font-size: 15px;
-      padding: 10px 32px;
-      margin-top: 10px;
-      background-color: transparent;
-      border: 2px solid white;
-      color: white;
-      font-family: 'Source Sans Pro', sans-serif;
-      text-transform: uppercase;
-      text-decoration: none;
-      cursor: pointer;
-      transition: color 0.5s ease-in-out;
-  }
-  
-  #mob-contact-wrapper button:hover {
-      color: #e65925;
-      background: white;
-      transition: 0.5s;
-      cursor: pointer;
-  }
+    }
+
+    #mob-contact-wrapper h2 {
+        font-size: 25px;
+        font-family: 'Average', serif;
+        font-style: italic;
+        font-weight: 100;
+        color: white;
+        padding: 25px 20px 5px 20px;
+    }
+
+    #mob-contact-wrapper button {
+        font-size: 15px;
+        padding: 10px 32px;
+        margin-top: 10px;
+        background-color: transparent;
+        border: 2px solid white;
+        color: white;
+        font-family: 'Source Sans Pro', sans-serif;
+        text-transform: uppercase;
+        text-decoration: none;
+        cursor: pointer;
+        transition: color 0.5s ease-in-out;
+    }
+
+    #mob-contact-wrapper button:hover {
+        color: #e65925;
+        background: white;
+        transition: 0.5s;
+        cursor: pointer;
+    }
 }
 
 
-/******* SMARTPHONE media queries 800px *******/
+/************************ 800px *****************************/
 
 @media (max-width: 800px) {
 
-    /* HOME page */
-    header {
-        padding: 5px 30px;
-    }
-
-    /* Navigation */
-    nav {
-        width: 100%;
-        height: 300px;
-        background: rgba(237, 237, 237, 0.8);
-        /* position: sticky; */
-        position: relative;
-    }
-
-    nav ul {
-        float: none;
-        display: block;
-        margin: 0;
-        padding: 0;
-    }
-
-    nav ul li {
-        /* display: block; */
-        padding: 5px 5px;
-    }
-
-    nav ul li a {
-        font-size: 15px;
-        margin: 3px 5px;
-        text-align: center;
-    }
-
-    nav ul li a.active {
-        border-bottom: 4px solid #e65925;
-    }
-
-    /* Navigation bottom-border-transition - expand from middle */
-    nav ul li a::after {
-        height: 4px;
-    }
-
-    nav ul li a:hover::after {
-        width: 25%;
-    }
-
-    /* Mobile Navbar */
-    .responsive-bar {
-        display: block;
-        width: 100%;
-        background: rgba(237, 237, 237, 0.8);
-        padding: 10px 30px;
-        box-sizing: border-box;
-    }
-
-    .responsive-bar h4 {
-        margin: 0;
-        padding: 0;
-        text-transform: uppercase;
-        font-size: 18px;
-        font-family: 'Source Sans Pro', sans-serif;
-        color: #e65925;
-        float: right;
-        padding: 5px 10px;
-        border: 1.5px solid #e65925;
-        cursor: pointer;
-    }
 
     /* VIDEO section */
     section.video-section {
         display: none;
     }
 
-    .mob-img-wrap .video-mobile {
+    .mob-img-wrap {
+        display: block;
         font-size: 30px;
         line-height: 2em;
-        padding: 0 25px;
+        /* padding: 0 25px; */
     }
 
-    
+    .mob-img-wrap img {
+        width: 100%;
+    }
+
+    .mob-img-wrap {
+        display: block;
+        position: relative;
+        text-align: center;
+    }
+
+    .mob-img-wrap .video-mobile {
+        width: 100%;
+        top: 50%;
+        left: 50%;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        color: #EDEDED;
+        font-size: 35px;
+        font-family: 'Amiko', sans-serif;
+    }
+
+
     /* Abour section */
 
     .about-section h2 {
@@ -1145,5 +1077,74 @@ hr {
     .quick-links ul li a {
         font-size: 18px;
     }
+
 }
 
+/********* 670px *************/
+@media (max-width: 670px) {
+
+    /* HOME page */
+    header {
+        padding: 5px 30px;
+    }
+
+    nav {
+        width: 100%;
+        height: 300px;
+        background: rgba(237, 237, 237, 0.8);
+        /* position: sticky; */
+        position: relative;
+    }
+
+    nav ul {
+        float: none;
+        display: block;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav ul li {
+        padding: 5px 5px;
+    }
+
+    nav ul li a {
+        font-size: 15px;
+        margin: 3px 5px;
+        text-align: center;
+    }
+
+    nav ul li a.active {
+        border-bottom: 8px solid #e65925;
+    }
+    
+    /* Navigation bottom-border-transition - expand from middle */
+    nav ul li a::after {
+        height: 6px;
+    }
+    
+    nav ul li a:hover::after {
+        width: 80px;
+         
+    }
+
+    .responsive-bar {
+        display: block;
+        width: 100%;
+        background: rgba(237, 237, 237, 0.8);
+        padding: 10px 30px;
+        box-sizing: border-box;
+    }
+
+    .responsive-bar h4 {
+        margin: 0;
+        padding: 0;
+        text-transform: uppercase;
+        font-size: 18px;
+        font-family: 'Source Sans Pro', sans-serif;
+        color: #e65925;
+        float: right;
+        padding: 5px 10px;
+        border: 1.5px solid #e65925;
+        cursor: pointer;
+    }
+}
