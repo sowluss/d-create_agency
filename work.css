@@ -22,8 +22,6 @@ nav {
   width: 100%;
   height: 61px;
   background: rgba(237, 237, 237, 0.8);
-  /* border-bottom: 1px solid #7A7A7A; */
-  /* scroll and sticky navbar */
   position: sticky;
   top: 0;
   /* fixed nav click problem in Chrome with: */
@@ -651,7 +649,7 @@ button:focus {
 }
 
 
-/* ------------- MEDIA QUERIES --------------------- */
+/************************  MEDIA QUERIES ***************************/
 
 @media (max-width: 1920px) {
   @keyframes flyinglogo {
@@ -771,7 +769,6 @@ margin-top: 60px;
 }
 
 
-
 /* CONTACT Page */
 
 .manager img {
@@ -786,7 +783,7 @@ margin-top: 60px;
 
 }
 
-/* 1400px */
+/************ 1400px ****************/
 @media (max-width: 1400px) {
 
   /* Navigation */
@@ -810,7 +807,7 @@ margin-top: 60px;
   .projects h2 {
     font-size: 25px;
     margin: 25px 0;
-    /* fixed button stayin at the same height below h2  */
+    /* fixed button stayin at the same height below h2 */
     min-height: 90px;
   }
 
@@ -820,11 +817,12 @@ margin-top: 60px;
   }
 }
 
+
+/**************** 1024px ***************/
+
 @media (max-width: 1024px) {
 
-  /*** WORK PAGE 1024 tablets - Landscape ***/
-
-  /* Banner 1024 tablets - Landscape */
+  /*** WORK PAGE  ***/
 
   .img-wrap {
     height: auto;
@@ -842,27 +840,9 @@ margin-top: 60px;
     height: 330px;
   }
 
-  /* Banner Message 1024 tablets - Landscape*/
+  /***  Banner Message *** /
 
-  .banner-message {
-  margin-top: 10px
-  }
-
-  .banner-message h2 {
-    font-size: 25px;
-    padding: 0 60px;
-  }
-
-  .banner-message button {
-    font-size: 15px;
-    padding: 10px 32px;
-  }
-
-.header-overlay {
-  display: none;
-}
-
-  /* Work page title 1024 tablets - Landscape */
+  /* Work page title  */
   .work-section {
     margin-top: 30px;
   }
@@ -876,7 +856,7 @@ margin-top: 60px;
     font-size: 25px;
   }
 
-  /* Work blocks 1024 tablets - Landscape */
+  /* Work blocks */
   div.work-wrapper,
   #work-row-one {
     margin-top: 20px;
@@ -887,7 +867,7 @@ margin-top: 60px;
     margin-top: -60px;
   }
 
-  /* Communications page 1024 tablets - Landscape*/
+  /* Communications page */
   h4#jm {
     font-size: 20px;
   }
@@ -896,7 +876,7 @@ margin-top: 60px;
     font-size: 18px;
   }
 
-  /* Share block 1024 tablets - Landscape */
+  /* Share block */
   .share-block {
     margin-top: 30px;
   }
@@ -905,7 +885,7 @@ margin-top: 60px;
     font-size: 20px;
   }
 
-  /* PROJECT MANAGER banner 1024 tablets - Landscape*/
+  /* PROJECT MANAGER */
   section.bottom-banner {
     height: 420px;
   }
@@ -927,18 +907,18 @@ margin-top: 60px;
     margin-right: 100px;
   }
 
-  /*  PAINTWORKS page 1024 tablets - Landscape */
+  /*  PAINTWORKS */
   .image-wrapper img#pw {
     margin-top: 40px;
     margin-bottom: 20px;
   }
 
-  /*  Living Solutions page 1024 tablets - Landscape */
+  /*  Living Solutions */
   div#living {
     margin-top: 60px;
   }
 
-  /*  Digital Experience page 1024 tablets - Landscape */
+  /*  Digital Experience  */
   p#digital {
     margin-top: 80px;
   }
@@ -947,7 +927,7 @@ margin-top: 60px;
     margin-top: 60px;
   }
 
-  /*  KT Sports page 1024 tablets - Landscape */
+  /*  KT Sports */
   div#kt {
     margin-top: 60px;
   }
@@ -1000,7 +980,7 @@ div.our-contacts {
 }
 
 
-  /* FOOTER 1024 tablets - Landscape */
+  /* FOOTER */
   .footer-wrap {
     min-height: 250px;
   }
@@ -1049,7 +1029,7 @@ div.our-contacts {
 }
 
 
-/* ******* MEDIA QUERIES 934px ******* */
+/* ******* 934px ******* */
 
 @media (max-width: 934px) {
   /* VIDEO section */
@@ -1077,19 +1057,8 @@ div.our-contacts {
   display: none; 
 }
 
-/* .banner-section {
-  height: auto;
-}
-
-.banner-section img {
-  width: 100%;
- 
-} */
-
-
 .small-work {
   display: block;
- 
 }
 
 .small-work img {
@@ -1098,23 +1067,12 @@ div.our-contacts {
 }
 
 .banner-mobile {
-  /* margin-top: 60px; */
-  height: 150px;
+  height: 180px;
   background: #414042;
   display: block;
-  margin-top: -19px;
-  padding-top: 10px;
+  margin-top: -3px;
+  padding: 20px;
 }
-
-/* .banner-mobile h4 {
-  text-transform: uppercase;
-  font-size: 20px;
-  font-family: 'Source Sans Pro', sans-serif;
-  color: white;
-  margin-top: 18px;
-  margin-left: 70px;
-  text-shadow: 0 0 0;
-} */
 
 .banner-mobile h2 {
   margin-top: 15px;
@@ -1162,6 +1120,7 @@ div.our-contacts {
 }
 
 /******* 790px ********/
+
 @media (max-width: 790px) {
 
   section.mobile-banner {
@@ -1194,6 +1153,7 @@ div.our-contacts {
   /* HOME page */
   header {
     padding: 5px 30px;
+    text-align: center;
 }
 
 /* Navigation */
@@ -1480,6 +1440,7 @@ div.our-contacts {
 }
 }
 
+/***** 480px *****/
 @media (max-width: 480px) {
 
   section.bottom-banner {
@@ -1513,17 +1474,12 @@ div.our-contacts {
   }
 
   /* Work page */
-
   .work-section h4 {
     margin-top: 50px;
     padding-top: 10px;
   }
 
-
-
 /* Contact page */
-
-
 section.mobile-banner {
   height: 1150px;
   background: #DBDBDB;
@@ -1536,5 +1492,4 @@ div.our-contacts {
   padding-top: 30px;
   position: relative;
 }
-
 }

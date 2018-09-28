@@ -166,9 +166,6 @@ section .container {
   transition: 0.5s;
 }
 
-/* .banner-mobile {
-  display: none;
-} */
 
 /* News page title */
 .news-section {
@@ -289,9 +286,13 @@ img#smartphone {
   display: none;
 }
 
+.tablet-hackaton {
+  display: none;
+}
 
 
-/* ------------- HIRING PAGE -------------------- */
+
+/* -----  HIRING PAGE ----- */
 
 .img-wrap .news-img {
   filter: grayscale(100%);
@@ -483,19 +484,25 @@ hr {
   background: black;
 }
 
+button:focus, input.form-control:focus {
+  outline:none !important;
+  outline-width: 0 !important;
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  }
+  
+
 /* ------------- MEDIA QUERIES --------------------- */
 
 
-/* 1024 tablets - Landscape */
+/******* 1400px *****/
 @media (max-width: 1400px) {
 
-  /* Navigation 1024 tablets - Landscape */
   nav ul li a {
     font-size: 18px;
   }
 
-  /* Have been stuck with the mobile banner img fow the second day!*/
-  /* Banner with message - 1024 tablets - Landscape  */
   .header-overlay {
     display: none;
   }
@@ -514,7 +521,6 @@ hr {
     width: auto;
   }
 
-  /* Banner Message 1024 tablets - Landscape*/
   .banner-mobile {
     height: 220px;
     background: #414042;
@@ -523,6 +529,7 @@ hr {
     display: flex;
     justify-content: centre;
     flex-direction: column;
+    margin-top: -3px;
   }
 
   .banner-mobile h4 {
@@ -569,7 +576,7 @@ hr {
     transition: 0.5s;
   }
 
-  /* News Title 1024 tablets - Landscape */
+  /* News Title */
   .news-section h4 {
     font-size: 20px;
   }
@@ -578,7 +585,7 @@ hr {
     font-size: 25px;
   }
 
-  /* News Blocks 1024 tablets - Landscape */
+  /* News Blocks */
   .news-block h4 {
     font-size: 20px;
     margin: 15px 5px;
@@ -679,10 +686,10 @@ hr {
   /* NEW STAFF page */
 
   .img-wrap .new-staff {
-    width: 130%;
+    width: 100%;
   }
 
-  /* FOOTER 1024 tablets - Landscape */
+  /* FOOTER */
   .footer-wrap {
     min-height: 250px;
   }
@@ -730,33 +737,46 @@ hr {
   }
 }
 
-@media (max-width: 800px) {
+/******* 1245px *****/
 
+/* New staff page */
+@media (max-width: 1245px) {
 
-  /* Mobile Navbar */
-  /* .responsive-bar {
-  display: block;
-  width: 100%;
-  background: rgba(237, 237, 237, 0.8);
-  padding: 10px 30px;
-  box-sizing: border-box;
+  .img-wrap {
+    display: none;
+  }
+
+  .banner-section {
+    display: none;
+  }
+
+  .new-staff-mobile {
+    display: block;
+  }
+  .new-staff-mobile img {
+    width: 100%;
+    margin-top: -3px;
+  }
+
+  .paragraphs p {
+    margin-top: 60px; 
+  }
+
+  /* News page */
+
+  .tablet-hackaton {
+    display: block
+  }
+
+  .tablet-hackaton img {
+    margin-top: -3px;
+  }
 }
 
-.responsive-bar h4 {
-  margin: 0;
-  padding: 0;
-  text-transform: uppercase;
-  font-size: 18px;
-  font-family: 'Source Sans Pro', sans-serif;
-  color: #e65925;
-  float: right;
-  padding: 5px 10px;
-  border: 1.5px solid #e65925;
-  cursor: pointer;
-} */
+/***** 800px ******/
+@media (max-width: 800px) {
 
   /* NEWS page */
-
 
   .banner-section {
     display: none;
@@ -829,6 +849,11 @@ hr {
     margin-top: 60px;
   }
 
+  .tablet-hackaton {
+    display: none;
+  }
+
+
   /* HIRING page */
 
   section#hiring {
@@ -854,13 +879,6 @@ hr {
   .hiring-wrap img {
     filter: grayscale(100%);
   }
-
-  /* Hackathon Page */
-
-  .ibanner-section#hackathon-img {
-    display: block;
-  }
-
 
   /* Footer - mobile */
 
@@ -926,6 +944,7 @@ hr {
 @media (max-width: 670px) {
 
   header {
+    text-align: center;
     padding: 5px 30px;
   }
 
@@ -933,7 +952,6 @@ hr {
     width: 100%;
     height: 300px;
     background: rgba(237, 237, 237, 0.8);
-    /* position: sticky; */
     position: relative;
   }
 
@@ -945,7 +963,6 @@ hr {
   }
 
   nav ul li {
-    /* display: block; */
     padding: 5px 5px;
   }
 
