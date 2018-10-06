@@ -783,6 +783,8 @@ margin-top: 60px;
 
 }
 
+
+
 /************ 1400px ****************/
 @media (max-width: 1400px) {
 
@@ -1026,6 +1028,20 @@ div.our-contacts {
     padding: 20px;
     font-size: 15px;
   }
+
+/* here */
+
+  .social-icons img.l-blue:hover {
+    transform: scale(1);
+  }
+  
+  .social-icons img.blue:hover {
+    transform: scale(1);
+  }
+  
+  .social-icons img.orange:hover {
+    transform: scale(1);
+  }
 }
 
 
@@ -1161,8 +1177,8 @@ nav {
     width: 100%;
     height: 300px;
     background: rgba(237, 237, 237, 0.8);
-    /* position: sticky; */
     position: relative;
+    display: none;
 }
 
 nav ul {
