@@ -105,6 +105,3 @@ $("#delivery").on('mouseenter', function() {
     $('#delivery-button').css("background-color", "transparent").css("transition", ".5s").css("color", "black");
   });
 });
-
-
-

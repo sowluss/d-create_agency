@@ -305,6 +305,7 @@ div.test img {
     cursor: pointer;
     position: absolute;
     top: 45%;
+    z-index: 1;
 }
 
 #arrow-right {
